@@ -6,15 +6,15 @@ function Contact() {
   const pageVariants = {
     initial: {
       opacity: 0,
-      y: "-100vw"
+      x: "100vw"
     },
     in: {
       opacity: 1,
-      y: 0
+      x: 0
     },
     out: {
       opacity: 0,
-      y: "100vw"
+      x: "-100vw"
     }
   };
   const pageTransitions = {
