@@ -1,0 +1,6 @@
+.projects-page {
+  height: 100vh;
+  background-color: antiquewhite;
+  overflow-x: hidden;
+  position: relative;
+}

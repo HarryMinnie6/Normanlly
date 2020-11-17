@@ -1,0 +1,6 @@
+.contact-page {
+  height: 100vh;
+  background-color: aqua;
+  overflowx: hidden;
+  position: relative;
+}
