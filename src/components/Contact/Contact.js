@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Contact.css";
 
 function Contact() {
@@ -32,8 +33,16 @@ function Contact() {
       variants={pageVariants}
       transition={pageTransitions}
     >
-      {/* <Navbar /> */}
       Contact page
+      {/* styles are in styles.css file */}
+      <div className="social-media__wrapper">
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-linkedin-in"></i>
+      </div>
+      <div className="logo__wrapper"></div>
+      <Link to="/projects" className="next-page__left">
+        <i class="fas fa-chevron-left"></i>
+      </Link>
     </motion.div>
   );
 }

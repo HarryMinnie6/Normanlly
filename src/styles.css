@@ -5,3 +5,47 @@
 ::-webkit-scrollbar {
   display: none;
 }
+/* style for social media tags on all pages */
+.social-media__wrapper {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+.fab {
+  font-size: 25px;
+}
+.logo__wrapper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(197, 197, 197);
+}
+.next-page__right {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.next-page__left {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.fas {
+  font-size: 25px;
+  opacity: 0.85;
+}

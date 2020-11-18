@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 
@@ -33,8 +34,18 @@ function Home() {
       variants={pageVariants}
       transition={pageTransitions}
     >
-      {/* <Navbar /> */}
-      home
+      <div className="social-media__wrapper">
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-linkedin-in"></i>
+      </div>
+      <div className="logo__wrapper"></div>
+      <Link to="/projects" className="next-page__right">
+        <i class="fas fa-chevron-right"></i>
+      </Link>
+      <p>
+        creating beautifully designed, user-friendly websites that reflect your
+        brand{" "}
+      </p>
     </motion.div>
   );
 }

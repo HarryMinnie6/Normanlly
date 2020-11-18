@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import "./Projects.css";
 
 function Projects() {
@@ -33,8 +33,18 @@ function Projects() {
       variants={pageVariants}
       transition={pageTransitions}
     >
-      {/* <Navbar /> */}
       Projects page
+      <div className="social-media__wrapper">
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-linkedin-in"></i>
+      </div>
+      <div className="logo__wrapper"></div>
+      <Link to="/" className="next-page__left">
+        <i class="fas fa-chevron-left"></i>
+      </Link>
+      <Link to="/contact" className="next-page__right">
+        <i class="fas fa-chevron-right"></i>
+      </Link>
     </motion.div>
   );
 }
