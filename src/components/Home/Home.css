@@ -1,7 +1,7 @@
 .home-page {
   min-height: 100vh;
   position: relative;
-  background-color: rgb(38, 122, 196);
+  background-color: #f8f8f8;
   overflow-x: hidden;
   display: flex;
   justify-content: center;

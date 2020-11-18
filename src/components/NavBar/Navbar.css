@@ -71,6 +71,8 @@ ul {
   font-weight: bolder;
   font-size: 14px;
   letter-spacing: 2px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
 }
 .link:hover {
   text-decoration: underline;

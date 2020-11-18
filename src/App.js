@@ -11,6 +11,7 @@ import Navbar from "./components/NavBar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
 
 export default function App() {
   const location = useLocation();
@@ -27,6 +28,9 @@ export default function App() {
             </Route>
             <Route exact path="/projects">
               <Projects />
+            </Route>
+            <Route exact path="/about">
+              <About />
             </Route>
             <Route exact path="/">
               <Home />

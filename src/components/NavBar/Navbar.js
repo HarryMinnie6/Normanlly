@@ -36,6 +36,11 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link className="link" to="/about">
+              What We Do
+            </Link>
+          </li>
+          <li>
             <Link className="link" to="/projects">
               Projects
             </Link>

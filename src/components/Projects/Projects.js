@@ -39,7 +39,7 @@ function Projects() {
         <i className="fab fa-linkedin-in"></i>
       </div>
       <div className="logo__wrapper"></div>
-      <Link to="/" className="next-page__left">
+      <Link to="/about" className="next-page__left">
         <i class="fas fa-chevron-left"></i>
       </Link>
       <Link to="/contact" className="next-page__right">
