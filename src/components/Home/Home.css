@@ -5,4 +5,157 @@
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  background-image: url("./background.jpg");
+}
+.home-page__wrapper {
+  position: relative;
+  margin-top: 56px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo__wrapper {
+  position: absolute;
+  top: 22%;
+  left: 150px;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(22, 131, 0);
+}
+h1 {
+  font-size: 110px;
+}
+.header-1 {
+  position: absolute;
+  left: 0;
+  top: 18%;
+}
+.header-2 {
+  position: absolute;
+  left: 200px;
+  top: 38%;
+}
+.paragraph-1 {
+  position: absolute;
+  top: 63%;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  .home-page__wrapper {
+    width: 85%;
+  }
+  h1 {
+    font-size: 90px;
+  }
+  .header-1 {
+    position: absolute;
+    left: 0;
+  }
+  .header-2 {
+    position: absolute;
+    left: 150px;
+  }
+  .paragraph-1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 795px) {
+  .home-page__wrapper {
+    width: 85%;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .header-2 {
+    position: absolute;
+    left: 150px;
+  }
+  .paragraph-1 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .home-page__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-1 {
+    position: absolute;
+    left: 50px;
+    top: 18%;
+  }
+  .header-2 {
+    position: absolute;
+    left: 150px;
+    top: 35%;
+  }
+  .paragraph-1 {
+    position: absolute;
+    top: 63%;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 660px) {
+  .header-1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    width: 100%;
+    text-align: center;
+  }
+  .header-2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    width: 100%;
+    text-align: center;
+  }
+  .paragraph-1 {
+    position: absolute;
+    top: 55%;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 25px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 60px;
+  }
+  .header-2 {
+    top: 25%;
+  }
+  .paragraph-1 {
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 40px;
+  }
+  .header-2 {
+    top: 25%;
+  }
+  .paragraph-1 {
+    position: absolute;
+    top: 47%;
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 25px;
+  }
 }

@@ -39,13 +39,18 @@ function Home() {
         <i className="fab fa-linkedin-in"></i>
       </div>
       <div className="logo__wrapper"></div>
-      <Link to="/projects" className="next-page__right">
-        <i class="fas fa-chevron-right"></i>
+      <Link to="/about" className="next-page__right">
+        <i className="fas fa-chevron-right"></i>
       </Link>
-      <p>
-        creating beautifully designed, user-friendly websites that reflect your
-        brand{" "}
-      </p>
+      <div className="home-page__wrapper">
+        <h1 className="header-1">Concept</h1>
+        <h1 className="header-2">Web Design</h1>
+
+        <p className="paragraph-1">
+          Creating beautifully designed, user-friendly websites that reflect
+          your brand{" "}
+        </p>
+      </div>
     </motion.div>
   );
 }

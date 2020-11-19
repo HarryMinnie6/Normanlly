@@ -13,7 +13,6 @@ body {
 img {
   width: 100%;
 }
-
 .hamburger-button {
   position: absolute;
   top: 1.2rem;
@@ -177,7 +176,7 @@ label #cancel {
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: #fe5758;
+    background-color: black;
   }
   label #cancel {
     z-index: 1111;
