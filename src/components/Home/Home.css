@@ -15,21 +15,62 @@
   flex-direction: column;
   align-items: center;
 }
-.logo__wrapper {
-  position: absolute;
-  top: 22%;
-  left: 150px;
-  width: 200px;
-  height: 30px;
-  background-color: rgb(22, 131, 0);
-}
 h1 {
-  font-size: 110px;
+  font-size: 100px;
 }
-.header-1 {
+
+.header-1__wrapper {
   position: absolute;
+  display: inline-block;
+  align-items: center;
   left: 0;
   top: 18%;
+}
+.header-1__wrapper > h1 {
+  padding: 0 10px;
+  font-family: "Architects Daughter", cursive;
+}
+.color-div1 {
+  position: absolute;
+  top: 10px;
+  width: 20px;
+  height: 4px;
+  background-color: rgb(255, 94, 0);
+}
+.color-div2 {
+  position: absolute;
+  top: 10px;
+  height: 20px;
+  width: 4px;
+  background-color: rgb(255, 94, 0);
+}
+.header-2__wrapper {
+  position: absolute;
+  display: inline;
+  align-items: center;
+  left: 200px;
+  top: 38%;
+}
+.header-2__wrapper > h1 {
+  position: relative;
+  padding: 0 10px;
+  /* font-family: "Architects Daughter", cursive; */
+}
+.color-div3 {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 20px;
+  height: 4px;
+  background-color: rgb(255, 94, 0);
+}
+.color-div4 {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 20px;
+  width: 4px;
+  background-color: rgb(255, 94, 0);
 }
 .header-2 {
   position: absolute;
@@ -61,19 +102,27 @@ h1 {
     font-size: 18px;
   }
 }
+@media (max-width: 840px) {
+  h1 {
+    font-size: 80px;
+  }
+  .paragraph-1 {
+    font-size: 17px;
+    text-align: center;
+  }
+}
 @media (max-width: 795px) {
   .home-page__wrapper {
     width: 85%;
   }
-  h1 {
-    font-size: 80px;
-  }
-  .header-2 {
+
+  .header-2__wrapper {
     position: absolute;
     left: 150px;
   }
   .paragraph-1 {
     font-size: 17px;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -84,45 +133,67 @@ h1 {
     align-items: center;
   }
 
-  .header-1 {
+  .header-1__wrapper {
     position: absolute;
-    left: 50px;
+    left: 100px;
     top: 18%;
+    width: 450px;
+    /* background-color: rebeccapurple; */
   }
-  .header-2 {
+  .header-2__wrapper {
     position: absolute;
-    left: 150px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 35%;
+    width: 450px;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+  }
+  .color-div1 {
+    height: 3px;
+    width: 15px;
+  }
+  .color-div2 {
+    width: 3px;
+    height: 15px;
+  }
+  .color-div3 {
+    height: 3px;
+    width: 15px;
+  }
+  .color-div4 {
+    width: 3px;
+    height: 15px;
   }
   .paragraph-1 {
     position: absolute;
     top: 63%;
     letter-spacing: 1px;
+    padding: 0 10px;
   }
 }
 @media (max-width: 660px) {
-  .header-1 {
+  .header-1__wrapper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 10%;
-    width: 100%;
+    width: 330px;
     text-align: center;
   }
-  .header-2 {
+  .header-2__wrapper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 30%;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
   .paragraph-1 {
     position: absolute;
     top: 55%;
     font-size: 16px;
-    padding: 0 10px;
-    text-align: center;
+
     line-height: 25px;
   }
 }
@@ -130,8 +201,12 @@ h1 {
   h1 {
     font-size: 60px;
   }
-  .header-2 {
+  .header-1__wrapper {
+    width: 250px;
+  }
+  .header-2__wrapper {
     top: 25%;
+    width: 350px;
   }
   .paragraph-1 {
     position: absolute;
@@ -141,14 +216,42 @@ h1 {
     text-align: center;
     line-height: 25px;
   }
+  .color-div3 {
+    bottom: 5px;
+    right: 5px;
+  }
+  .color-div4 {
+    bottom: 5px;
+    right: 5px;
+  }
 }
 
 @media (max-width: 370px) {
   h1 {
     font-size: 40px;
   }
-  .header-2 {
+
+  .header-1__wrapper {
+    width: 170px;
+  }
+  .header-2__wrapper {
     top: 25%;
+    width: 235px;
+  }
+  .color-div1 {
+    top: 5px;
+  }
+  .color-div2 {
+    top: 5px;
+    width: 3px;
+  }
+  .color-div3 {
+    bottom: 0px;
+    right: 0px;
+  }
+  .color-div4 {
+    bottom: 0px;
+    right: 0px;
   }
   .paragraph-1 {
     position: absolute;
