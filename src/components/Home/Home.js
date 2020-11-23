@@ -38,6 +38,7 @@ function Home() {
         <i className="fab fa-instagram"></i>
         <i className="fab fa-linkedin-in"></i>
       </div>
+      <div className="bottom-line"></div>
       <Link to="/about" className="next-page__right">
         <i className="fas fa-chevron-right"></i>
       </Link>

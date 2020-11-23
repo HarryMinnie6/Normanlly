@@ -43,6 +43,7 @@ function Contact() {
       <Link to="/projects" className="next-page__left">
         <i class="fas fa-chevron-left"></i>
       </Link>
+      lets grow your business together
     </motion.div>
   );
 }

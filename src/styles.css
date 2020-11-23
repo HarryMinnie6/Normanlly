@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Karla&family=Libre+Franklin:wght@200&family=Manrope:wght@300;400&family=Nunito:wght@300&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Bad+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@
   font-family: "Manrope", sans-serif;
   /* font-family: "Nunito", sans-serif; */
   /* font-family: "Roboto", sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -16,17 +18,19 @@
 /* style for social media tags on all pages */
 .social-media__wrapper {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 25px;
+  left: 25px;
   display: flex;
   justify-content: space-between;
   width: 60px;
 }
 .fab {
   font-size: 25px;
+  color: rgb(255, 94, 0);
 }
 
 .next-page__right {
+  z-index: 999;
   position: absolute;
   right: 15px;
   top: 50%;
@@ -35,8 +39,10 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  
 }
 .next-page__left {
+  z-index: 999;
   position: absolute;
   left: 15px;
   top: 50%;
@@ -48,8 +54,7 @@
 }
 .fas {
   font-size: 50px;
-  opacity: 0.1;
-  color: black;
+  color: rgb(255, 94, 0, 0.5);
 }
 @media (max-width: 768px) {
   .fas {

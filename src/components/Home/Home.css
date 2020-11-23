@@ -1,11 +1,23 @@
 .home-page {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   background-color: #f8f8f8;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
-  background-image: url("./background.jpg");
+  background-image: url("../../images/pexels-elina-krima-3377405-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* border-bottom: 4px solid orangered; */
+}
+.bottom-line {
+  z-index: 9899999999;
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background-color: rgb(255, 94, 0, 0.5);
+  width: 100vw;
 }
 .home-page__wrapper {
   position: relative;
@@ -21,39 +33,51 @@ h1 {
 
 .header-1__wrapper {
   position: absolute;
-  display: inline-block;
-  align-items: center;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
   top: 18%;
+  width: fit-content;
 }
 .header-1__wrapper > h1 {
   padding: 0 10px;
   font-family: "Architects Daughter", cursive;
+  text-shadow: 1px 1px 6px rgb(163, 163, 163);
+  /* text-align: center; */
 }
 .color-div1 {
   position: absolute;
-  top: 10px;
+  top: 20px;
+  left: 0;
   width: 20px;
   height: 4px;
   background-color: rgb(255, 94, 0);
 }
 .color-div2 {
   position: absolute;
-  top: 10px;
+  top: 20px;
+  left: 0;
   height: 20px;
   width: 4px;
   background-color: rgb(255, 94, 0);
 }
 .header-2__wrapper {
   position: absolute;
-  display: inline;
-  align-items: center;
-  left: 200px;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
   top: 38%;
+  width: fit-content;
 }
 .header-2__wrapper > h1 {
   position: relative;
   padding: 0 10px;
+  text-align: center;
+  text-shadow: 1px 1px 6px rgb(163, 163, 163);
+  /* background-color: orangered; */
+  /* width: fit-content; */
   /* font-family: "Architects Daughter", cursive; */
 }
 .color-div3 {
@@ -72,16 +96,14 @@ h1 {
   width: 4px;
   background-color: rgb(255, 94, 0);
 }
-.header-2 {
-  position: absolute;
-  left: 200px;
-  top: 38%;
-}
+
 .paragraph-1 {
   position: absolute;
   top: 63%;
   letter-spacing: 1px;
   font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 6px rgb(163, 163, 163);
 }
 @media (max-width: 1024px) {
   .home-page__wrapper {
@@ -92,11 +114,11 @@ h1 {
   }
   .header-1 {
     position: absolute;
-    left: 0;
+    /* left: 0; */
   }
   .header-2 {
     position: absolute;
-    left: 150px;
+    /* left: 150px; */
   }
   .paragraph-1 {
     font-size: 18px;
@@ -118,7 +140,7 @@ h1 {
 
   .header-2__wrapper {
     position: absolute;
-    left: 150px;
+    /* left: 150px; */
   }
   .paragraph-1 {
     font-size: 17px;
@@ -134,20 +156,19 @@ h1 {
   }
 
   .header-1__wrapper {
-    position: absolute;
-    left: 100px;
+    /* position: absolute; */
+    /* left: 100px; */
     top: 18%;
-    width: 450px;
+    /* width: 450px; */
     /* background-color: rebeccapurple; */
   }
   .header-2__wrapper {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+
     top: 35%;
-    width: 450px;
+    /* width: 450px; */
     /* background-color: rebeccapurple; */
-    text-align: center;
+    /* text-align: center; */
   }
   .color-div1 {
     height: 3px;
@@ -174,20 +195,14 @@ h1 {
 }
 @media (max-width: 660px) {
   .header-1__wrapper {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     top: 10%;
-    width: 330px;
-    text-align: center;
+    /* width: 330px; */
+    /* text-align: center; */
   }
   .header-2__wrapper {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     top: 30%;
     /* width: 100%; */
-    text-align: center;
+    /* text-align: center; */
   }
   .paragraph-1 {
     position: absolute;
@@ -201,12 +216,10 @@ h1 {
   h1 {
     font-size: 60px;
   }
-  .header-1__wrapper {
-    width: 250px;
-  }
+
   .header-2__wrapper {
     top: 25%;
-    width: 350px;
+    /* width: 350px; */
   }
   .paragraph-1 {
     position: absolute;
@@ -228,15 +241,13 @@ h1 {
 
 @media (max-width: 370px) {
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
-  .header-1__wrapper {
-    width: 170px;
-  }
+
   .header-2__wrapper {
     top: 25%;
-    width: 235px;
+    /* width: 235px; */
   }
   .color-div1 {
     top: 5px;
@@ -260,5 +271,10 @@ h1 {
     padding: 0 10px;
     text-align: center;
     line-height: 25px;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 40px;
   }
 }
