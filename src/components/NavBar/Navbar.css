@@ -33,12 +33,13 @@ img {
 }
 /* -------------------Navbar START-------------------------------------------------- */
 .sidebar {
-  z-index: 999999;
+  z-index: 99;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* background-color: red */
 }
 .sidebar > header {
   width: 100%;
@@ -58,6 +59,7 @@ ul {
   text-decoration: none;
   /* padding: 40px 25px 0 0; */
   text-align: center;
+  /* background-color: gold */
 }
 .link {
   text-decoration: none;
@@ -168,6 +170,7 @@ label #cancel {
     width: 35px;
     height: 25px;
     /* background-color: blue; */
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -182,10 +185,9 @@ label #cancel {
     z-index: 1111;
     left: -150px;
     top: 15px;
-    color: green;
-    font-size: 20px;
     /* font-weight: lighter; */
     transition: all 0.8s ease;
+    position: fixed;
   }
 
   #check:checked ~ .sidebar {

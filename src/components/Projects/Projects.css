@@ -1,6 +1,45 @@
 .projects-page {
-  height: 100vh;
+  height: 100%;
   background-color: #f8f8f8;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.project-page__wrapper {
+  position: relative;
+  margin-top: 56px;
+  width: 100%;
+  /* height: 800px; */
+  /* height: 100%;  */
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: #88700e;
+}
+
+.project-holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+  background-color: blue;
+  width: 100%;
+  box-sizing: border-box;
+}
+.project {
+  width: 340px;
+  height: 300px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin:1px */
+}
+img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
 }

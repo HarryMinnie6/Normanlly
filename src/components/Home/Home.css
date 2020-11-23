@@ -19,6 +19,25 @@
   background-color: rgb(255, 94, 0, 0.5);
   width: 100vw;
 }
+.next-page__right {
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  /* transform: translateY(-50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.fas {
+  font-size: 50px;
+  color: rgb(255, 94, 0, 0.5);
+}
+.fas:hover {
+  cursor: pointer;
+}
 .home-page__wrapper {
   position: relative;
   margin-top: 56px;
@@ -243,7 +262,6 @@ h1 {
   h1 {
     font-size: 50px;
   }
-
 
   .header-2__wrapper {
     top: 25%;

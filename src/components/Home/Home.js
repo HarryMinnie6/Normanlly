@@ -1,46 +1,28 @@
 import React, { Fragment } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import "./Home.css";
+import About from "../About/About";
 
 function Home() {
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      x: "100vw"
-    },
-    in: {
-      opacity: 1,
-      x: 0
-    },
-    out: {
-      opacity: 0,
-      x: "-100vw"
-    }
-  };
-  const pageTransitions = {
-    transition: "linear",
-    // type: "tween",
-    // ease: "anticipate",
-    duration: 0.8
-  };
   return (
-    <motion.div
-      className="home-page"
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransitions}
-    >
-      <div className="social-media__wrapper">
+    <div className="home-page" id="/">
+      {/* <div className="social-media__wrapper">
         <i className="fab fa-instagram"></i>
         <i className="fab fa-linkedin-in"></i>
-      </div>
+      </div> */}
       <div className="bottom-line"></div>
-      <Link to="/about" className="next-page__right">
-        <i className="fas fa-chevron-right"></i>
+      <Link
+        className="next-page__right"
+        to="projects"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
+        <i className="fas fa-chevron-down"></i>
       </Link>
       <div className="home-page__wrapper">
         <div className="header-1__wrapper ">
@@ -59,7 +41,7 @@ function Home() {
           your brand{" "}
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

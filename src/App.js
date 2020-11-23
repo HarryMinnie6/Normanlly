@@ -12,32 +12,26 @@ import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Landing from "./components/Landing/Landing";
 
 export default function App() {
   const location = useLocation();
   return (
     <Fragment>
-      <Fragment>
-        <Navbar />
-      </Fragment>
-      <section style={{ position: "relative" }}>
-        <AnimatePresence>
-          <Switch location={location} key={location.pathname}>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
-            <Route exact path="/projects">
-              <Projects />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </AnimatePresence>
-      </section>
+      <Navbar />
+
+      <Switch>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/projects">
+          <Projects />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route path="/" exact component={Landing}></Route>
+      </Switch>
     </Fragment>
   );
 }

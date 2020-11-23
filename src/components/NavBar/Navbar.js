@@ -1,14 +1,9 @@
 import React, { Fragment, useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 
 function Navbar() {
-  const [click, setClick] = useState();
-
-  const onClick = () => {
-    setClick(!click);
-  };
   return (
     <Fragment>
       <input type="checkbox" id="check" />
@@ -28,44 +23,65 @@ function Navbar() {
           <div></div>
         </div>
       </label>
+      <div className="social-media__wrapper">
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-linkedin-in"></i>
+      </div>
       <nav className="sidebar">
         <ul>
           <li className="active">
-            <Link className="link" to="/">
+            <Link
+              className="link"
+              to="/"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link className="link" to="/about">
+            <Link
+              className="link"
+              to="about"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               What We Do
             </Link>
           </li>
           <li>
-            <Link className="link" to="/projects">
+            <Link
+              className="link"
+              to="projects"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link className="link" to="/contact">
+            <Link
+              className="link"
+              to="contact"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               Contact
             </Link>
           </li>
         </ul>
-        {/* <div className='contact-details__wrapper'>
-          <div className='email-details_wrapper'>
-            <p className='p__header'>Email</p>
-            <p className='p__detail'>shaun@invictus-tech.nl</p>
-          </div>
-          <div className='phone-details__wrapper'>
-            <p className='p__header'>Phone</p>
-            <p className='p__detail'>+31 64 005 1485</p>
-          </div>
-          <div className='address-details__wrapper'>
-            <p className='p__header'>Physical Address</p>
-            <p className='p__detail'>Laan van Broekpolder 314</p>
-            <p className='p__detail'>Heemskerk 1967kg</p>
-          </div>
-        </div> */}
       </nav>
     </Fragment>
   );
