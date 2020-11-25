@@ -41,7 +41,7 @@ img {
   width: 100%;
 }
 .sidebar2 {
-  background-color: red;
+  background-color: #F2F1ED;
   transition: background-color 200ms linear;
 }
 .sidebar > header {

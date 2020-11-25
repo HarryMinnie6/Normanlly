@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 function About() {
   return (
     <>
-      <div className="about-page" id="about">
+      <div className='about-page' id='about'>
         {/* styles are in styles.css file */}
         {/* <div className="social-media__wrapper">
           <i className="fab fa-instagram"></i>
@@ -19,19 +19,31 @@ function About() {
         <Link to="/projects" className="next-page__right">
           <i class="fas fa-chevron-right"></i>
         </Link> */}
-        <div className="about-page__wrapper">
-          <div className="description__wrapper">
-            I'm a freelance web developer / designer based in Cape Town, South
-            Africa, I am available anywhere at the push of a button. I have a
-            passion for web design and love to create for web and mobile
-            devices. I offer a personalised service tailored to your individual
-            needs and budget.
+        <div className='about-page__wrapper'>
+          <div className='description__wrapper'>
+            <div className='description__wrapper-1'>
+              <p>
+                We love working with small businesses and brands to build a web
+                presence.
+              </p>
+            </div>
+            <div className='description__wrapper-2'>
+              <p>
+                Concept web desing was initially born for the love of creating
+                for the web. We have always cared for geat visual design and
+                amazing user experience. Whether you are simply looking for a web
+                presence or a comprehensive website, Concept Web design offers a
+                personalised service tailored to your individual needs and
+                budget. We are available anywhere, anytime at the push of a
+                button.
+              </p>
+            </div>
           </div>
-          <div className="type-of-work__wrapper">
-            <div className="web-design__wrapper">
-              <h1 className="web-design__header">Check out what we offer</h1>
-              <div className="web-design__description">
-                <div className="web-design__service">
+          <div className='type-of-work__wrapper'>
+            <div className='web-design__wrapper'>
+              <h1 className='web-design__header'>Check out what we offer</h1>
+              <div className='web-design__description'>
+                <div className='web-design__service'>
                   <h3>Custom design</h3>
                   <p>
                     We will organise a consultation to get an understanding of
@@ -40,7 +52,7 @@ function About() {
                   </p>
                 </div>
                 {/* <div className="line"></div> */}
-                <div className="web-design__service">
+                <div className='web-design__service'>
                   <h3>single page/ multipage sites</h3>
                   <p>
                     If you are simply looking for a web presence or a
@@ -48,7 +60,7 @@ function About() {
                   </p>
                 </div>
                 {/* <div className="line"></div> */}
-                <div className="web-design__service">
+                <div className='web-design__service'>
                   <h3>Fully responsive</h3>
                   <p>
                     You want a website that is engaging and easy to use. All our
@@ -57,7 +69,7 @@ function About() {
                   </p>
                 </div>
                 {/* <div className="line"></div> */}
-                <div className="web-design__service">
+                <div className='web-design__service'>
                   <h3>Modern design</h3>
                   <p>
                     We use but simple but effective design skills that are
@@ -66,7 +78,7 @@ function About() {
                   </p>
                 </div>
                 {/* <div className="line"></div> */}
-                <div className="web-design__service">
+                <div className='web-design__service'>
                   <h3>Excellent user experience</h3>
                   <p>
                     We build our sites to best practices for a great user
@@ -75,7 +87,7 @@ function About() {
                 </div>
                 {/* <div className="line"></div> */}
 
-                <div className="web-design__service">
+                <div className='web-design__service'>
                   <h3>Assistance with hosting</h3>
                   <p>
                     We assist you with finding the perfect host for your new

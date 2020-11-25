@@ -1,18 +1,27 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 import About from "../About/About";
 
 function Home() {
+ // for bottom line to disappear on scroll
+ const [scrollUp, setScrollUp] = useState(false);
+
+ useEffect(() => {
+   window.addEventListener("scroll", () => {
+     setScrollUp(window.scrollY > 10);
+   });
+ }, []);
+
   return (
     <div className="home-page" id="/">
       {/* <div className="social-media__wrapper">
         <i className="fab fa-instagram"></i>
         <i className="fab fa-linkedin-in"></i>
       </div> */}
-      <div className="bottom-line"></div>
+      <div className="bottom-line" className={scrollUp ? "bottom-line bottom-line2" : "bottom-line "}></div>
       <Link
         className="next-page__right"
         to="projects"

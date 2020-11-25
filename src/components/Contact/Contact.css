@@ -1,18 +1,18 @@
 .contact-page {
   background-color: #5248af;
-  background: linear-gradient(rgba(26, 22, 59, 0.8), rgba(26, 22, 59, 0.8)),
-    url("../images/network.jpg");
+  background-image: url("../../images/pexels-elina-krima-3377405-3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   padding: 30px 0 15px 0;
   height: 200px;
+ 
 }
 .contact-details__holder {
   margin: 30px 0 0 0;

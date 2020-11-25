@@ -5,35 +5,21 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="projects-page" id="projects">
-      {/* <div className="social-media__wrapper">
-        <i className="fab fa-instagram"></i>
-        <i className="fab fa-linkedin-in"></i>
-      </div> */}
-
-      {/* <Link to="/about" className="next-page__left">
-        <i class="fas fa-chevron-left"></i>
-      </Link>
-      <Link to="/contact" className="next-page__right">
-        <i class="fas fa-chevron-right"></i>
-      </Link> */}
-      <div className="project-page__wrapper">
-        <div className="project-holder">
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
-          <div className="project">project</div>
+    <div className='projects-page' id='projects'>
+      <div className='project-page__wrapper'>
+        <h2>What we've worked on</h2>
+        <div className='project-holder'>
+          <div className='project'>
+          <div className='project-image'><img src='' alt='' /></div>
+            
+            <div className='project-description'>
+            <p>fjr wekj wefweef djsfsdlfkjwe wefjwefwef wefljsdfnwef wewefjwe wejuwjdfnwefwe wefjnwef</p></div>
+          </div>
+          <div className='project'>project</div>
+          <div className='project'>project</div>
+          <div className='project'>project</div>
+          <div className='project'>project</div>
+          <div className='project'>project</div>
         </div>
       </div>
     </div>

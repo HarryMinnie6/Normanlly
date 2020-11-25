@@ -6,18 +6,24 @@
   display: flex;
   justify-content: center;
   background-image: url("../../images/pexels-elina-krima-3377405-3.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-attachment: fixed;
   /* border-bottom: 4px solid orangered; */
+
 }
 .bottom-line {
-  z-index: 9899999999;
+  z-index: 98;
   position: absolute;
   bottom: 0;
   height: 5px;
   background-color: rgb(255, 94, 0, 0.5);
   width: 100vw;
+}
+.bottom-line2{
+  opacity: 0;
+  transition: opacity 200ms linear;
 }
 .next-page__right {
   z-index: 999;
@@ -32,6 +38,7 @@
   text-decoration: none;
 }
 .fas {
+  z-index: 97;
   font-size: 50px;
   color: rgb(255, 94, 0, 0.5);
 }
@@ -63,7 +70,6 @@ h1 {
   padding: 0 10px;
   font-family: "Architects Daughter", cursive;
   text-shadow: 1px 1px 6px rgb(163, 163, 163);
-  /* text-align: center; */
 }
 .color-div1 {
   position: absolute;
