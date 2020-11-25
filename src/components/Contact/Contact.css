@@ -1,5 +1,5 @@
 .contact-page {
-  background-color: #5248af;
+  background-color: #f2f1ed;
   background-image: url("../../images/pexels-elina-krima-3377405-3.jpg");
   background-position: center;
   background-size: cover;
@@ -12,7 +12,6 @@
   /* justify-content: center; */
   padding: 30px 0 15px 0;
   height: 200px;
- 
 }
 .contact-details__holder {
   margin: 30px 0 0 0;

@@ -6,7 +6,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 
   /* overflow-x: hidden; */
   position: relative;
@@ -20,17 +19,18 @@
   /* height: 800px; */
   /* height: 100%;  */
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   /* flex-wrap: wrap; */
   /* justify-content: center; */
   align-items: center;
-  background-color: #88700e;
+  /* background-color: #88700e; */
 }
-.project-page__wrapper > h2{
-font-size: 30px;
+.project-page__wrapper > h2 {
+  font-size: 30px;
 }
 
 .project-holder {
+  margin: 25px 0;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -40,28 +40,60 @@ font-size: 30px;
   box-sizing: border-box;
 }
 .project {
-  width:350px;
+  position: relative;
+  width: 350px;
   margin: 2px;
   height: 300px;
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 6px rgb(163, 163, 163);
+
   /* margin:1px */
 }
-.project-image{
+
+.project-image {
+  position: absolute;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-color: red;
 }
 .project-description {
-  background-color: beige;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 50%;
+  height: 100%;
+  transition: opacity 200ms ease-in-out;
+}
+.project-description > h3 {
+  margin-top: 50px;
+}
+.project-description > p {
+  margin-top: 30px;
+}
+.site-link {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #000;
+  background-color: rgb(255, 94, 0);
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.project:hover .project-description {
+  opacity: 1;
+  background-color: rgb(242, 241, 237, 0.7);
 }
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }

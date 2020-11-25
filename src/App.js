@@ -15,7 +15,6 @@ import About from "./components/About/About";
 import Landing from "./components/Landing/Landing";
 
 export default function App() {
-  const location = useLocation();
   return (
     <Fragment>
       <Navbar />
