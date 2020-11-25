@@ -39,7 +39,10 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* background-color: red */
+}
+.sidebar2 {
+  background-color: red;
+  transition: background-color 200ms linear;
 }
 .sidebar > header {
   width: 100%;

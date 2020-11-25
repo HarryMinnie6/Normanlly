@@ -1,9 +1,18 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 
 import { Link } from "react-scroll";
 import "./Navbar.css";
 
 function Navbar() {
+  // for navbar to change color on scroll
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 100);
+    });
+  }, []);
+
   return (
     <Fragment>
       <input type="checkbox" id="check" />
@@ -27,7 +36,7 @@ function Navbar() {
         <i className="fab fa-instagram"></i>
         <i className="fab fa-linkedin-in"></i>
       </div>
-      <nav className="sidebar">
+      <nav className={scroll ? "sidebar sidebar2" : "sidebar "}>
         <ul>
           <li className="active">
             <Link

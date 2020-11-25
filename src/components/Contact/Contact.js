@@ -6,7 +6,10 @@ import "./Contact.css";
 function Contact() {
   return (
     <div className="contact-page" id="contact">
-      lets grow your business together
+      <div className="contact-details__holder">
+        <p>lets grow your business together</p>
+        <p>+27 (0) 76 591 9127</p>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,32 @@
 .contact-page {
-  height: 100vh;
-  background-color: #f8f8f8;
-  overflow-x: hidden;
-  position: relative;
+  background-color: #5248af;
+  background: linear-gradient(rgba(26, 22, 59, 0.8), rgba(26, 22, 59, 0.8)),
+    url("../images/network.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 30px 0 15px 0;
+  height: 200px;
+}
+.contact-details__holder {
+  margin: 30px 0 0 0;
+  padding: 10px 0;
+  height: 100%;
+  /* background-image: linear-gradient(to right, #1a163b, #2f2c5b); */
+  /* backdrop-filter: blur(5px); */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.contact-details__holder > p {
+  margin: 15px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
 }
