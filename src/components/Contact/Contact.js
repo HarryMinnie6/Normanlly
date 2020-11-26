@@ -7,7 +7,8 @@ function Contact() {
   return (
     <div className="contact-page" id="contact">
       <div className="contact-details__holder">
-        <p>lets grow your business together</p>
+        <p>Let's grow your business together</p>
+        <p>harryminnie6@gmail.com</p>
         <p>+27 (0) 76 591 9127</p>
       </div>
     </div>

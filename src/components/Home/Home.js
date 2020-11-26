@@ -22,11 +22,11 @@ function Home() {
         <i className="fab fa-linkedin-in"></i>
       </div> */}
       <div
-        className="bottom-line"
-        className={scrollUp ? "bottom-line2" : "bottom-line "}
+       
+        className={scrollUp ? "bottom-line2" : "bottom-line"}
       ></div>
       <Link
-        className="next-page__right"
+        className={scrollUp ? "next-page__right2" : "next-page__right"}
         to="projects"
         activeClass="active"
         spy={true}

@@ -1,0 +1,81 @@
+.services-page {
+  height: 100%;
+  background-color: #f8f8f8;
+  /* overflow-x: hidden; */
+  position: relative;
+  background-image: url("../../images/pexels-elina-krima-3377405-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+.services-page__wrapper {
+  position: relative;
+  padding: 20px 0 20px 0;
+  width: 100%;
+
+  /* height: 100%;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #bba54f; */
+}
+.services-display__wrapper {
+  margin: 20px 10px 10px 10px;
+  background-color: red;
+  display: flex;
+}
+.service__wrapper {
+    position: relative;
+  margin: 0 20px;
+  background-color: #f2f1ed;
+  box-shadow: 1px 1px 6px rgb(163, 163, 163);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__wrapper > h3 {
+  margin: 15px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+.service__wrapper > p {
+  margin: 10px;
+  text-align: center;
+}
+.service__wrapper > a {
+
+  text-decoration: none;
+  color: #000000;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(255, 94, 0);
+}
+@media (max-width: 768px) {
+  .services-display__wrapper {
+    flex-direction: column;
+  }
+  .service__wrapper {
+    margin: 10px 0;
+    padding: 5px;
+  }
+  .service__wrapper > p {
+    margin: 10px;
+    text-align: start;
+  }
+  .service__wrapper > a {
+align-self: flex-end;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(255, 94, 0);
+  }
+}

@@ -19,9 +19,9 @@
 /* style for social media tags on all pages */
 .social-media__wrapper {
   z-index: 1000;
-  position: fixed;
-  bottom: 25px;
-  left: 25px;
+  position: absolute;
+  /* bottom: 25px; */
+  right: 25px;
   display: flex;
   justify-content: space-between;
   width: 60px;

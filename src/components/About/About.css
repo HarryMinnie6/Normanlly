@@ -1,7 +1,6 @@
 .about-page {
   height: 100%;
   background-color: #f8f8f8;
-  /* overflow-x: hidden; */
   position: relative;
   background-image: url("../../images/pexels-elina-krima-3377405-3.jpg");
   background-position: center;
@@ -9,190 +8,119 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-sizing: border-box;
-
 }
 .about-page__wrapper {
   position: relative;
   padding: 30px 0 20px 0;
   width: 100%;
-  /* height: 800px; */
-  /* height: 100%;  */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #f4f3ef; */
 }
 .description__wrapper {
   padding: 15px 10px;
-  width:70%;
+  width: 70%;
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
   font-size: 18px;
   line-height: 30px;
 }
-.description__wrapper-1{
-font-size: 40px;
-display: flex;
+.description__wrapper-1 {
+  font-size: 40px;
+  display: flex;
 }
-.description__wrapper-2{
+.description__wrapper-2 {
   margin-top: 20px;
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
-  }
-  .description__wrapper-1 > p{
-    font-size: 40px;
-    width: 55%;
-    line-height: 55px;
-    text-shadow: 1px 1px 6px rgb(163, 163, 163);
-    font-family: "Architects Daughter", cursive;
-    }
-  .description__wrapper-2 > p{
-    font-size: 18px;
-    width: 55%;
-    text-shadow: 1px 1px 6px rgb(163, 163, 163);
-    font-family: "Libre Franklin", sans-serif;
-    margin-bottom: 30px;
-    }
-.type-of-work__wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }
-.web-design__wrapper {
-  display: flex;
-  justify-content: center;
-  background-color: gainsboro;
-  padding: 50px 0 100px 0;
-  width: 100%;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+.description__wrapper-1 > p {
+  font-size: 40px;
+  width: 55%;
+  line-height: 55px;
+  text-shadow: 1px 1px 6px rgb(163, 163, 163);
+  font-family: "Architects Daughter", cursive;
 }
-.web-design__header {
-  font-size: 35px;
-  text-align: center;
-}
-.web-design__description {
-  margin-top: 20px;
-  /* padding: 20px 20px; */
-  position: relative;
-  display: flex;
-  width: 100%;
-  /* flex-direction: column; */
-  justify-content: center;
-  flex-wrap: wrap;
-  /* background-color: red */
-}
-.web-design__service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5px 5px;
-  width: 320px;
-  backdrop-filter: blur(2px);
-  border: 1px solid rgb(163, 163, 163, 0.5);
-}
-.web-design__service > h3 {
-  font-size: 22px;
-  padding: 15px 0px;
-}
-.web-design__service > p {
-  padding: 5px 5px 10px 5px;
-  line-height: 30px;
+.description__wrapper-2 > p {
   font-size: 18px;
-  text-align: center;
+  width: 55%;
+  text-shadow: 1px 1px 6px rgb(163, 163, 163);
+  font-family: "Libre Franklin", sans-serif;
+  margin-bottom: 30px;
 }
-.line {
-  height: 3px;
-  width: 200px;
-  background-color: rgb(255, 94, 0, 0.5);
-  align-self: center;
-}
+
 @media (max-width: 1440px) {
   .description__wrapper {
-    
-    width:80%;
-   
+    width: 80%;
   }
-  .description__wrapper-1{
-  font-size: 40px;
-  display: flex;
+  .description__wrapper-1 {
+    font-size: 40px;
+    display: flex;
   }
-  .description__wrapper-2{
+  .description__wrapper-2 {
     margin-top: 20px;
     font-size: 18px;
     display: flex;
     justify-content: flex-end;
-    }
-    .description__wrapper-1 > p{
-      font-size: 40px;
-      width: 60%;
-
-      }
-    .description__wrapper-2 > p{
-      font-size: 18px;
-      width: 60%;
-
-      }
+  }
+  .description__wrapper-1 > p {
+    font-size: 40px;
+    width: 60%;
+  }
+  .description__wrapper-2 > p {
+    font-size: 18px;
+    width: 60%;
+  }
 }
+
 @media (max-width: 1024px) {
   .description__wrapper {
-    
-    width:90%;
-   
+    width: 90%;
   }
-  .description__wrapper-1{
-  font-size: 40px;
-  display: flex;
+  .description__wrapper-1 {
+    font-size: 40px;
+    display: flex;
   }
-  .description__wrapper-2{
+  .description__wrapper-2 {
     margin-top: 20px;
     font-size: 18px;
     display: flex;
     justify-content: flex-end;
-    }
-    .description__wrapper-1 > p{
-      font-size: 40px;
-      width: 60%;
-
-      }
-    .description__wrapper-2 > p{
-      font-size: 18px;
-      width: 60%;
-
-      }
+  }
+  .description__wrapper-1 > p {
+    font-size: 40px;
+    width: 60%;
+  }
+  .description__wrapper-2 > p {
+    font-size: 18px;
+    width: 60%;
+  }
 }
+
 @media (max-width: 930px) {
   .description__wrapper {
-    
-    width:90%;
-   
+    width: 90%;
   }
-  .description__wrapper-1{
-  font-size: 40px;
-  display: flex;
+  .description__wrapper-1 {
+    font-size: 40px;
+    display: flex;
   }
-  .description__wrapper-2{
+  .description__wrapper-2 {
     margin-top: 20px;
     font-size: 18px;
     display: flex;
     justify-content: flex-end;
-    }
-    .description__wrapper-1 > p{
-      font-size: 40px;
-      width: 75%;
-
-      }
-    .description__wrapper-2 > p{
-      font-size: 18px;
-      width: 80%;
-
-      }
+  }
+  .description__wrapper-1 > p {
+    font-size: 40px;
+    width: 75%;
+  }
+  .description__wrapper-2 > p {
+    font-size: 18px;
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -202,46 +130,41 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    width:95%;
-   
+    width: 95%;
   }
-  .description__wrapper-1{
-  font-size: 40px;
-  display: flex;
-  align-items: center;
+  .description__wrapper-1 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
   }
-  .description__wrapper-2{
+  .description__wrapper-2 {
     margin-top: 20px;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    .description__wrapper-1 > p{
-      font-size: 30px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      }
-    .description__wrapper-2 > p{
-      font-size: 18px;
-      width: 90%;
-      display: flex;
+  }
+  .description__wrapper-1 > p {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .description__wrapper-2 > p {
+    font-size: 18px;
+    width: 90%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-
-      }
-  .type-of-work__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
   }
-  .web-design__wrapper,
-  .web-development__wrapper {
-    width: 100%;
+}
+@media (max-width: 380px) {
+  .description__wrapper-1 > p {
+    font-size: 25px;
+  }
+  .description__wrapper-2 > p {
+    font-size: 16px;
+    width: 90%;
   }
 }

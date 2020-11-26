@@ -32,11 +32,9 @@ function Navbar() {
           <div></div>
         </div>
       </label>
-      <div className="social-media__wrapper">
-        <i className="fab fa-instagram"></i>
-        <i className="fab fa-linkedin-in"></i>
-      </div>
+      
       <nav className={scroll ? "sidebar sidebar2" : "sidebar "}>
+     
         <ul>
           <li className="active">
             <Link
@@ -91,6 +89,10 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+        <div className="social-media__wrapper">
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-linkedin-in"></i>
+      </div>
       </nav>
     </Fragment>
   );

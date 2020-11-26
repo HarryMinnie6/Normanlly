@@ -35,14 +35,14 @@
   flex-wrap: wrap;
   align-self: center;
   justify-content: center;
-  background-color: blue;
+  /* background-color: blue; */
   width: 100%;
   box-sizing: border-box;
 }
 .project {
   position: relative;
   width: 350px;
-  margin: 2px;
+  margin: 10px;
   height: 300px;
   /* background-color: green; */
   display: flex;
@@ -90,10 +90,39 @@
 }
 .project:hover .project-description {
   opacity: 1;
-  background-color: rgb(242, 241, 237, 0.7);
+  background-color: rgb(246, 244, 241, 0.7);
 }
 img {
   width: 100%;
   height: 100%;
   /* object-fit: contain; */
+}
+
+@media (max-width: 380px){
+  .project-page__wrapper > h2 {
+    font-size: 25px;
+  }
+  .project {
+    width: 320px;
+    margin: 5px 0;
+    height: 270px;
+  }
+  .site-link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+    background-color: rgb(255, 94, 0);
+    padding: 8px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 335px){
+  .project {
+    width: 300px;
+    /* margin: 10px 0; */
+    height: 250px;
+  }
 }

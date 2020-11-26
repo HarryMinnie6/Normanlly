@@ -7,13 +7,15 @@ import Home from "../Home/Home";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import Services from '../Services/Services'
 
 function Landing() {
   return (
     <div>
       <Home />
-      <Projects />
       <About />
+      <Services/>
+      <Projects />
       <Contact />
       <Footer />
     </div>
