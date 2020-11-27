@@ -9,31 +9,32 @@ function Services() {
           <h2> What we offer</h2>
           <div className='services-display__wrapper'>
             <div className='service__wrapper'>
-              <h3> Single page or multipage sites</h3>
+              <h3 className='single-page__header'>
+                {" "}
+                Single page or multipage sites
+              </h3>
               <p>
                 Choose one of 3 templates to get your business/ brand off the
-                ground, or choose the bits you like the most, from each
-                template, to give your site that unique look and feel.
+                ground, or choose the bits from each template, to give your site
+                that unique look and feel.
               </p>
-              <a href=''>find out more</a>
+              <a href=''>Find out more</a>
             </div>
             <div className='service__wrapper'>
               <h3>Custom Design</h3>
               <p>
-                Choose one of 3 templates to get your business/ brand off the
-                ground, or choose the bits you like the most, from each
-                template, to give your site that unique look and feel.
+                Do you have something different in mind, or want to start
+                selling online? We can design and build your idea.
               </p>
-              <a href=''>find out more</a>
+              <a href=''>Find out more</a>
             </div>
             <div className='service__wrapper'>
               <h3>Assistance with hosting</h3>
               <p>
-                Choose one of 3 templates to get your business/ brand off the
-                ground, or choose the bits you like the most to give your site
-                that unique feel.
+                We assist you with finding the perfect host for your new site,
+                where it is available for the world to see.
               </p>
-              <a href=''>find out more</a>
+              <a href=''>Find out more</a>
             </div>
           </div>
         </div>

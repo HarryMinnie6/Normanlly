@@ -67,6 +67,6 @@
   }
   .footer_one > p {
     color: rgb(26, 22, 29);
-    /* margin:20px */
+   font-size: 13px;
   }
 }

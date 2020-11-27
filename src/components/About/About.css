@@ -159,6 +159,11 @@
     align-items: center;
   }
 }
+@media (max-width: 630px) {
+  .description__wrapper-2 > p {
+    font-size: 15px;
+  }
+}
 @media (max-width: 380px) {
   .description__wrapper-1 > p {
     font-size: 25px;

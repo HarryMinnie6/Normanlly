@@ -40,3 +40,12 @@
   text-shadow: 1px 1px 6px rgb(163, 163, 163);
 
 }
+@media (max-width: 630px){
+  .contact-details__holder > p {
+    font-size: 14px;
+    margin: 15px;
+    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 1px 1px 6px rgb(163, 163, 163);
+  }
+}
