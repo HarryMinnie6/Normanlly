@@ -18,10 +18,10 @@ function About() {
                 Concept web design was initially born for the love of creating
                 for the web. We have always cared for geat visual design and
                 amazing user experience. Whether you are simply looking for a
-                web presence or a comprehensive site, Concept Web design
-                offers a personalised service tailored to your individual needs
-                and budget. We are available anywhere, anytime at the push of a
-                button.
+                web presence or a comprehensive site, Concept Web design helps
+                start-ups and established businesses to launch their new or
+                revamped websites. We are available anywhere, anytime at the
+                push of a button.
               </p>
             </div>
           </div>

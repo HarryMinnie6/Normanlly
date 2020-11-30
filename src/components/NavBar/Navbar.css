@@ -107,15 +107,17 @@ label #cancel {
     height: 100vh;
     background-color: #ffffff;
     transition: all 0.5s ease;
+    
   }
   ul {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* top: 180px; */
     list-style: none;
     text-decoration: none;
-    padding: 40px 0;
+    padding: 40px 25px 0 0;
     text-align: center;
   }
   .close-bar {
@@ -218,7 +220,7 @@ label #cancel {
     width: 100%;
   }
   ul {
-    padding: 15px 20px 0 0;
+    padding:  0;
   }
   .link {
     padding: 20px 0;

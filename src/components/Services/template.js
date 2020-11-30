@@ -32,7 +32,7 @@ function Services() {
                   <h3>Fully responsive</h3>
                   <p>
                     You want a website that is engaging and easy to use. All our
-                    sites are mobile friendly, letting your website's visitors
+                    sites are mobile friendly, letting your websites visitors
                     get the best experience possible on any device.
                   </p>
                 </div>
@@ -40,7 +40,7 @@ function Services() {
                 <div className='web-design__service'>
                   <h3>Modern design</h3>
                   <p>
-                    We use but simple but effective design skills that are
+                    We use simple but effective design skills that are
                     constantly evolving as we keep up with the latest design
                     trends.
                   </p>
