@@ -73,6 +73,8 @@
   padding: 10px;
   text-align: center;
   line-height: 25px;
+  text-shadow: 1px 1px 6px rgb(163, 163, 163);
+
 }
 @media (max-width: 1024px) {
   .services__wrapper {
