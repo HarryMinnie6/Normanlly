@@ -5,16 +5,16 @@ import {
   // browser router on index.js so that useLocation hook can work
   Route,
   Switch,
-  useLocation,
+  useLocation
 } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
-import Home from "./components/Home/Home";
+// import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Landing from "./components/Landing/Landing";
-import SinglePageOption from "./components/Services/SinglePageOption/SinglePageOption";
-import CustomPageOption from "./components/Services/CustomPageOption/CustomPageOption";
+// import SinglePageOption from "./components/Services/SinglePageOption/SinglePageOption";
+// import CustomPageOption from "./components/Services/CustomPageOption/CustomPageOption";
 
 export default function App() {
   return (
@@ -22,22 +22,22 @@ export default function App() {
       <Navbar />
       <AnimatePresence>
         <Switch>
-          <Route exact path='/contact'>
+          <Route exact path="/contact">
             <Contact />
           </Route>
-          <Route exact path='/projects'>
+          <Route exact path="/projects">
             <Projects />
           </Route>
-          <Route exact path='/about'>
+          <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path='/SinglePageOption'>
-            <SinglePageOption />
+          <Route exact path="/SinglePageOption">
+            {/* <SinglePageOption /> */}
           </Route>
-          <Route exact path='/CustomPageOption'>
-            <CustomPageOption />
+          <Route exact path="/CustomPageOption">
+            {/* <CustomPageOption /> */}
           </Route>
-          <Route path='/' exact component={Landing}></Route>
+          <Route path="/" exact component={Landing}></Route>
         </Switch>
       </AnimatePresence>
     </Fragment>

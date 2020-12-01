@@ -5,73 +5,45 @@ import "./Services.css";
 function Services() {
   return (
     <Fragment>
-      <div className='services-page' id='about'>
-        <div className='services-page__wrapper'>
+      <div className="services-page" id="about">
+        <div className="services-page__wrapper">
           <h2> What we offer</h2>
-          <div className='services__wrapper'>
-            <div className='service'>
-            <div className='service-line'></div>
-              <h2>dfdf</h2>
+          <div className="services__wrapper">
+            <div className="service">
+              <div className="service-line"></div>
+              <h2>Custom design</h2>
               <p>
-                Someone once said that creativity is just connecting things, in
-                our case it’s a little more than that. Since the late nineties
-                we’ve not only been making connections, we’ve been nurturing,
-                cultivating and enriching them.
+                We can design your project from scratch or improve on an
+                existing design. Our designs are carefully thought out and
+                matches to your requirements.
+                <br></br>
+                <br></br>
+                <i>
+                  “There are three responses to a piece of design – yes, no, and
+                  WOW! - Milton Glaser
+                </i>
               </p>
             </div>
-            <div className='service'>
-            <div className='service-line'></div>
-              <h2>dfdf</h2>
+            <div className="service">
+              <div className="service-line"></div>
+              <h2>Fully responsive design</h2>
               <p>
-                Someone once said that creativity is just connecting things, in
-                our case it’s a little more than that. Since the late nineties
-                we’ve not only been making connections, we’ve been nurturing,
-                cultivating and enriching them.
+                Mobile devices accounts for approximately half of web traffic
+                worldwide. All our sites are mobile friendly, allowing visitors
+                to your site from any device. We also focus on Search Engine
+                Optimization. What use is a good site without any visitors?
               </p>
             </div>
-            <div className='service'>
-            <div className='service-line'></div>
-              <h2>dfdf</h2>
+            <div className="service">
+              <div className="service-line"></div>
+              <h2>User-Friendly experiences</h2>
               <p>
-                Someone once said that creativity is just connecting things, in
-                our case it’s a little more than that. Since the late nineties
-                we’ve not only been making connections, we’ve been nurturing,
-                cultivating and enriching them.
+                We create sites that are engaging and easy to use. We use simple
+                but effective design skills that are constantly evolving as we
+                keep up with the latest design trends.
               </p>
             </div>
           </div>
-          <div className='services__wrapper services__wrapper2'>
-          <div className='service'>
-          <div className='service-line'></div>
-            <h2>dfdf</h2>
-            <p>
-              Someone once said that creativity is just connecting things, in
-              our case it’s a little more than that. Since the late nineties
-              we’ve not only been making connections, we’ve been nurturing,
-              cultivating and enriching them.
-            </p>
-          </div>
-          <div className='service'>
-          <div className='service-line'></div>
-            <h2>dfdf</h2>
-            <p>
-              Someone once said that creativity is just connecting things, in
-              our case it’s a little more than that. Since the late nineties
-              we’ve not only been making connections, we’ve been nurturing,
-              cultivating and enriching them.
-            </p>
-          </div>
-          <div className='service'>
-          <div className='service-line'></div>
-            <h2>dfdf</h2>
-            <p>
-              Someone once said that creativity is just connecting things, in
-              our case it’s a little more than that. Since the late nineties
-              we’ve not only been making connections, we’ve been nurturing,
-              cultivating and enriching them.
-            </p>
-          </div>
-        </div>
         </div>
       </div>
     </Fragment>

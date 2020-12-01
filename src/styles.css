@@ -11,10 +11,13 @@
   /* font-family: "Nunito", sans-serif; */
   /* font-family: "Roboto", sans-serif; */
   font-family: "Raleway", sans-serif;
-
 }
 ::-webkit-scrollbar {
   display: none;
+}
+::selection {
+  color: black;
+  background: rgb(255, 94, 0, 0.5);
 }
 /* style for social media tags on all pages */
 .social-media__wrapper {
@@ -30,18 +33,6 @@
   font-size: 25px;
   color: rgb(255, 94, 0);
 }
-
-/* .next-page__left {
-  z-index: 999;
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-} */
 
 @media (max-width: 768px) {
   .fas {

@@ -31,7 +31,7 @@
   /* background-attachment: fixed; */
 }
 
-.services-page__wrapper >h2 {
+.services-page__wrapper > h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -45,10 +45,10 @@
 }
 .services__wrapper2 {
   margin-top: 0;
-  
 }
-.service{
+.service {
   padding-top: 15px;
+  min-width: 220px;
   max-width: 350px;
   display: flex;
   flex-direction: column;
@@ -58,53 +58,45 @@
   border: 1px solid rgb(228, 228, 228);
   backdrop-filter: blur(5px);
 }
-.service-line{
+.service-line {
   height: 3px;
-  background-color: rgb(255, 94, 0, 0.5);;
-  width: 80px
+  background-color: rgb(255, 94, 0, 0.5);
+  width: 80px;
 }
 
-.service > h2{
+.service > h2 {
   font-size: 22px;
   margin: 15px 0;
+  text-align: center;
 }
-.service > p{
-padding: 10px;
-text-align: center;
-line-height: 25px
+.service > p {
+  padding: 10px;
+  text-align: center;
+  line-height: 25px;
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .services__wrapper {
     width: 90%;
-    
   }
 }
-@media (max-width: 850px){
+@media (max-width: 850px) {
   .services__wrapper {
     width: 95%;
-    
   }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .services__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
-  .service{
-   
+  .service {
     max-width: 100%;
-   
   }
 }
 
-
-
-
-
-    @media (max-width: 375px) {
-      .services-page__wrapper >h2 {
-        font-size: 22px;
-      }
-       }
+@media (max-width: 375px) {
+  .services-page__wrapper > h2 {
+    font-size: 22px;
+  }
+}
