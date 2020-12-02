@@ -1,11 +1,10 @@
 import React, { Fragment } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import "./styles.css";
 import {
   // browser router on index.js so that useLocation hook can work
   Route,
-  Switch,
-  useLocation
+  Switch
 } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import Contact from "./components/Contact/Contact";
