@@ -8,7 +8,7 @@ function Footer() {
           <p>© 2020 Concept Web Design® | All rights reserved.</p>
         </div>
         <div className="footer_two">
-          <p>Created by Harry Minnie</p>
+          <p>Created by Concept Web Design</p>
         </div>
       </div>
     </section>
