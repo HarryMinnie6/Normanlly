@@ -90,7 +90,7 @@
 }
 .project:hover .project-description {
   opacity: 1;
-  background-color: rgb(246, 244, 241, 0.7);
+  background-color: rgb(255, 94, 0, 0.4);
 }
 img {
   width: 100%;
