@@ -7,9 +7,9 @@ function Services() {
     <Fragment>
       <div className="services-page" id="about">
         <div className="services-page__wrapper">
-          <h2> What we offer</h2>
+          <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" data-aos-anchor-placement="top-bottom" data-aos-once="true" > What we offer</h2>
           <div className="services__wrapper">
-            <div className="service">
+            <div className="service" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
               <div className="service-line"></div>
               <h2>Custom design</h2>
               <p>
@@ -24,7 +24,7 @@ function Services() {
                 </i>
               </p>
             </div>
-            <div className="service">
+            <div className="service" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
               <div className="service-line"></div>
               <h2>Fully responsive design</h2>
               <p>
@@ -34,7 +34,7 @@ function Services() {
                 Optimization. What use is a good site without any visitors?
               </p>
             </div>
-            <div className="service">
+            <div className="service" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
               <div className="service-line"></div>
               <h2>User-Friendly experiences</h2>
               <p>

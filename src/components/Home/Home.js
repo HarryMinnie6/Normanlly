@@ -1,9 +1,7 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, {  useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./Home.css";
-import About from "../About/About";
 
 function Home() {
   // for bottom line to disappear on scroll
@@ -37,18 +35,18 @@ function Home() {
         <i className="fas fa-chevron-down"></i>
       </Link>
       <div className="home-page__wrapper">
-        <div className="header-1__wrapper ">
-          <h1>Concept</h1>
-          <div className="color-div1"></div>
-          <div className="color-div2"></div>
+        <div className="header-1__wrapper" >
+          <h1 data-aos="zoom-in" data-aos-delay="1000">Concept</h1>
+          <div className="color-div1" data-aos="zoom-in" data-aos-delay="1000"></div>
+          <div className="color-div2" data-aos="zoom-in" data-aos-delay="1000"></div>
         </div>
         <div className="header-2__wrapper ">
-          <h1>Web design</h1>
-          <div className="color-div3"></div>
-          <div className="color-div4"></div>
+          <h1 data-aos="zoom-in" data-aos-delay="1100">Web design</h1>
+          <div data-aos="zoom-in" data-aos-delay="1100" className="color-div3"></div>
+          <div data-aos="zoom-in" data-aos-delay="1100" className="color-div4"></div>
         </div>
 
-        <p className="paragraph-1">
+        <p className="paragraph-1" data-aos="flip-up" data-aos-delay="1100" data-aos-duration="1000">
           Creating beautifully designed, user-friendly websites that reflect
           your brand{" "}
         </p>
