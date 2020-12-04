@@ -89,10 +89,10 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <div className="social-media__wrapper">
+       {/*  <div className="social-media__wrapper">
         <i className="fab fa-instagram"></i>
         <i className="fab fa-linkedin-in"></i>
-      </div>
+      </div> */}
       </nav>
     </Fragment>
   );
