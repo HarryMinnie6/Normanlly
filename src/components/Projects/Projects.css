@@ -76,6 +76,7 @@
 }
 .project-description > p {
   margin-top: 30px;
+  font-family: "Libre Franklin", sans-serif;
 }
 .site-link {
   text-decoration: none;
@@ -97,13 +98,12 @@ img {
   height: 100%;
   /* object-fit: contain; */
 }
-@media( max-width: 768px){
+@media (max-width: 768px) {
   .project-page__wrapper > h2 {
     font-size: 25px;
   }
-  
 }
-@media (max-width: 380px){
+@media (max-width: 380px) {
   .project-page__wrapper > h2 {
     font-size: 22px;
   }
@@ -124,7 +124,7 @@ img {
     right: 20px;
   }
 }
-@media (max-width: 335px){
+@media (max-width: 335px) {
   .project {
     width: 300px;
     /* margin: 10px 0; */
