@@ -36,19 +36,19 @@ function Home() {
       </Link>
       <div className="home-page__wrapper">
         <div className="header-1__wrapper" >
-          <h1 data-aos="zoom-in" data-aos-delay="1000">Concept</h1>
-          <div className="color-div1" data-aos="zoom-in" data-aos-delay="1000"></div>
-          <div className="color-div2" data-aos="zoom-in" data-aos-delay="1000"></div>
+          <h1 data-aos="zoom-in" data-aos-delay="1000" data-aos-once="true">Concept</h1>
+          <div className="color-div1" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1000"></div>
+          <div className="color-div2" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1000"></div>
         </div>
         <div className="header-2__wrapper ">
           <h1 data-aos="zoom-in" data-aos-delay="1100">Web design</h1>
-          <div data-aos="zoom-in" data-aos-delay="1100" className="color-div3"></div>
-          <div data-aos="zoom-in" data-aos-delay="1100" className="color-div4"></div>
+          <div data-aos="zoom-in" data-aos-delay="1100" data-aos-once="true" className="color-div3"></div>
+          <div data-aos="zoom-in" data-aos-delay="1100" data-aos-once="true" className="color-div4"></div>
         </div>
 
-        <p className="paragraph-1" data-aos="flip-up" data-aos-delay="1100" data-aos-duration="1000">
+        <p className="paragraph-1" data-aos="flip-up" data-aos-delay="1100" data-aos-duration="1000" data-aos-once="true">
           Creating beautifully designed, user-friendly websites that reflect
-          your brand{" "}
+          your brand
         </p>
       </div>
     </div>

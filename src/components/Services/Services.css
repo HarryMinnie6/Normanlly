@@ -69,10 +69,10 @@
   margin: 15px 0;
   text-align: center;
 }
-.service > p {
+.service > p, .service > i {
   padding: 10px;
   text-align: center;
-  line-height: 25px;
+  line-height: 28px;
   /* text-shadow: 1px 1px 6px rgb(163, 163, 163); */
   font-family: "Libre Franklin", sans-serif;
 }
