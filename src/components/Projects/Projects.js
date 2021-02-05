@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div className="projects-page" id="projects">
       <div className="project-page__wrapper">
-        <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-once="true">What we've worked on</h2>
+        <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-once="true">What I've worked on</h2>
         <div className="project-holder">
           <div className="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
             <div className="project-image">

@@ -39,9 +39,10 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: rgb(22, 22, 22);
 }
 .sidebar2 {
-  background-color: #F2F1ED;
+  background-color: rgb(22, 22, 22, 0.9);
   transition: background-color 200ms linear;
 }
 .sidebar > header {
@@ -70,16 +71,18 @@ ul {
   height: 100%;
   width: 100%;
   padding: 20px 15px;
-  color: #1a163b;
+  color: #59d2fe;
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 14px;
   letter-spacing: 2px;
   font-family: "Manrope", sans-serif;
-  font-weight: 200;
+  /* font-weight: 200; */
 }
 .link:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #caa8f5;
+  cursor: pointer;
 }
 /* .active {
   text-decoration: underline;
@@ -105,7 +108,7 @@ label #cancel {
     z-index: 999;
     width: 180px;
     height: 100vh;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     transition: all 0.5s ease;
     
   }

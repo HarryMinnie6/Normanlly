@@ -82,7 +82,7 @@
   text-decoration: none;
   font-weight: bolder;
   color: #000;
-  background-color: rgb(255, 94, 0);
+  background-color:  #caa8f5;
   padding: 10px;
   border-radius: 20px;
   position: absolute;
@@ -91,7 +91,7 @@
 }
 .project:hover .project-description {
   opacity: 1;
-  background-color: rgb(255, 94, 0, 0.4);
+  background-color: rgb(89,210,254, 0.4);;
 }
 img {
   width: 100%;

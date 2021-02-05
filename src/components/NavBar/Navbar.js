@@ -59,7 +59,7 @@ function Navbar() {
               offset={0}
               duration={500}
             >
-              What We Do
+              What I Do
             </Link>
           </li>
           <li>

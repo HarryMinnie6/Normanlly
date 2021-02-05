@@ -7,7 +7,7 @@ function Services() {
     <Fragment>
       <div className="services-page" id="about">
         <div className="services-page__wrapper">
-          <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-once="true"> What we offer</h2>
+          <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-once="true"> What I do</h2>
           <div className="services__wrapper">
             <div className="service" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
               <div className="service-line"></div>
