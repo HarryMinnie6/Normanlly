@@ -3,7 +3,7 @@ import { ReactComponent as CloseMenu } from "./assets/x.svg";
 import { ReactComponent as MenuIcon } from "./assets/menu.svg";
 import { ReactComponent as Logo } from "./assets/secondary-logo.svg";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -36,29 +36,27 @@ const Header = () => {
        
       </div>
       <ul className={click ? "nav-options active" : "nav-options"}>
+     
         <li className="option" onClick={closeMobileMenu}>
-          <Link   className="link"
-          to="/"
-          activeClass="active"
+          <Link className="link" to="about"     activeClass="active"
           spy={true}
           smooth={true}
-          offset={0}
-          duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="option" onClick={closeMobileMenu}>
-          <Link className="link" to="#about">
+          offset={-150}
+          duration={100}>
             What We Do
           </Link>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link className="link" to="services">
+          <Link className="link" to="projects"     activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}>
           Projects
           </Link>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link className="link" to="solutions">
+          <Link className="link" to="contact">
           Contact
           </Link>
         </li>

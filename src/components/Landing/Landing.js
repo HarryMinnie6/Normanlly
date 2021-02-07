@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import About from "../About/About";
 import Home from "../Home/Home";
+
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
@@ -44,8 +45,9 @@ function Landing() {
       variants={pageVariants}
       transition={pageTransition}
     >
+    
       <Home />
-      <About />
+      <About  />
       <Services />
       <Projects />
       <Contact />

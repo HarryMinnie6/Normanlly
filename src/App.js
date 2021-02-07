@@ -19,26 +19,19 @@ export default function App() {
   return (
     <Fragment>
       <Navbar />
-      <AnimatePresence>
+     
         <Switch>
-          <Route exact path='contact'>
-            <Contact />
+          <Route path='/contact'></Route>
+          <Route path='/projects'>
+           
           </Route>
-          <Route exact path='projects'>
-            <Projects />
+          <Route path='/about' component={About}>
+            
           </Route>
-          <Route exact path='about'>
-            <About />
-          </Route>
-          <Route exact path='/SinglePageOption'>
-            {/* <SinglePageOption /> */}
-          </Route>
-          <Route exact path='/CustomPageOption'>
-            {/* <CustomPageOption /> */}
-          </Route>
+
           <Route path='/' exact component={Landing}></Route>
         </Switch>
-      </AnimatePresence>
+     
     </Fragment>
   );
 }

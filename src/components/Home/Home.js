@@ -14,7 +14,7 @@ function Home() {
   }, []);
 
   return (
-    <div className='home-page' id='/'>
+    <div className='home-page' id='home'>
       <div className={scrollUp ? "bottom-line2" : "bottom-line"}></div>
       <section className='landing-section' id='home'>
         <div className='logoHolder'>
