@@ -32,42 +32,53 @@ const Header = () => {
 
   return (
     <div className={visible ? "header" : "header2"}>
-      <div className="logo-nav">
-       
-      </div>
+      <div className='logo-nav'></div>
       <ul className={click ? "nav-options active" : "nav-options"}>
-     
-        <li className="option" onClick={closeMobileMenu}>
-          <Link className="link" to="about"     activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-150}
-          duration={100}>
+        <li className='option' onClick={closeMobileMenu}>
+          <Link
+            className='link'
+            to='about'
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={100}
+          >
             What We Do
           </Link>
         </li>
-        <li className="option" onClick={closeMobileMenu}>
-          <Link className="link" to="projects"     activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-150}
-          duration={500}>
-          Projects
+        <li className='option' onClick={closeMobileMenu}>
+          <Link
+            className='link'
+            to='projects'
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={300}
+          >
+            Projects
           </Link>
         </li>
-        <li className="option" onClick={closeMobileMenu}>
-          <Link className="link" to="contact">
-          Contact
+        <li className='option' onClick={closeMobileMenu}>
+          <Link
+            className='link'
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={300}
+          >
+            Contact
           </Link>
         </li>
-     
       </ul>
 
-      <div className="mobile-menu" onClick={handleClick}>
+      <div className='mobile-menu' onClick={handleClick}>
         {click ? (
-          <CloseMenu className="menu-icon" />
+          <CloseMenu className='menu-icon' />
         ) : (
-          <MenuIcon className="menu-icon" />
+          <MenuIcon className='menu-icon' />
         )}
       </div>
     </div>
