@@ -1,231 +1,127 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-/* .logo__container {
-  width: 100%;
-  object-fit: contain;
-} */
-img {
-  width: 100%;
-}
-.hamburger-button {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
-  /* display: none; */
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35px;
-  height: 25px;
-  z-index: 99999999999;
-  color: black;
-}
-.hamburger-button .bar {
-  height: 4px;
-  width: 100%;
-  border-radius: 4px;
-  background: #071b29;
-}
-/* -------------------Navbar START-------------------------------------------------- */
-.sidebar {
-  z-index: 99;
+/*Desktop View*/
+.header {
   position: fixed;
+  /* top:0; */
+  width: 100vw;
   display: flex;
+  background-color: rgb(0, 0, 0, 0.96);
+  /* border-bottom: 1px solid rgb(243, 243, 243); */
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: rgb(22, 22, 22);
-}
-.sidebar2 {
-  background-color: rgb(22, 22, 22, 0.9);
-  transition: background-color 200ms linear;
-}
-.sidebar > header {
-  width: 100%;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: rgb(194, 102, 102);
+  /* padding: 0px 40px; */
   height: 60px;
+  z-index: 99;
+  box-sizing: border-box;
+  transition: opacity 500ms ease-in-out;
 }
-ul {
-  position: relative;
+.header2 {
+  position: fixed;
+  width: 100vw;
   display: flex;
-  /* top: 180px; */
-  list-style: none;
+  background-color: rgb(0, 0, 0, 0.96);
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: 99;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+.logo-nav {
+  padding: 0;
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 45px;
+}
+.nav-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.mobile-option {
+  display: none;
+}
+.option {
+  padding: 10px 20px;
   text-decoration: none;
-  /* padding: 40px 25px 0 0; */
-  text-align: center;
-  /* background-color: gold */
+}
+.option:hover {
+  cursor: pointer;
 }
 .link {
   text-decoration: none;
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 20px 15px;
+  font-size: 18px;
   color: #59d2fe;
-  text-transform: uppercase;
-  font-weight: bolder;
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-family: "Manrope", sans-serif;
-  /* font-weight: 200; */
+  transition: 0.2s ease;
 }
+
 .link:hover {
-  /* text-decoration: underline; */
-  color: #caa8f5;
-  cursor: pointer;
+  color: #ffffff;
 }
-/* .active {
-  text-decoration: underline;
-} */
 
-#check {
+.mobile-menu {
   display: none;
 }
-label #btn,
-label #cancel {
-  display: none;
-  position: absolute;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-}
-
-/* -------------------Navbar END-------------------------------------------------- */
-
 @media (max-width: 768px) {
-  .sidebar {
-    left: -182px;
-    opacity: 0.85;
-    z-index: 999;
-    width: 180px;
-    height: 100vh;
-    /* background-color: #ffffff; */
+  /*Mobile View */
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  .nav-options {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    position: absolute;
+    left: 00px;
+    top: 60px;
+    left: -500px;
+    right: 0;
+    opacity: 0;
     transition: all 0.5s ease;
-    
-  }
-  ul {
-    position: relative;
-    display: flex;
     flex-direction: column;
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  .nav-options.active {
+    background-color: rgb(0, 0, 0, 0.96);
+    left: 0px;
+    /* right: 0; */
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+
+  .menu-icon {
+    position: absolute;
+    top: -22px;
+    right: -5px;
+    width: 30px;
+    height: 45px;
+    color: #59d2fe;
+  }
+  .option {
+    display: flex;
     align-items: center;
-    /* top: 180px; */
-    list-style: none;
-    text-decoration: none;
-    padding: 40px 25px 0 0;
-    text-align: center;
-  }
-  .close-bar {
-    position: fixed;
-    width: 25px;
-    height: 25px;
-    /* background-color: blue; */
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Safari and Chrome */
-  }
-
-  .close-bar:before,
-  .close-bar:after {
-    content: "";
-    position: absolute;
-
-    z-index: -1;
-    background-color: #2f2c5b;
-    border-radius: 2px;
-  }
-
-  .close-bar:before {
-    left: 53%;
-
-    width: 2px;
-    margin-left: -15%;
-    height: 90%;
-  }
-
-  .close-bar:after {
-    top: 53%;
-    height: 2px;
-    margin-top: -15%;
-    width: 90%;
-  }
-
-  label #btn,
-  label #cancel {
-    display: block;
-    position: absolute;
-    cursor: pointer;
-  }
-  label #btn {
-    left: 15px;
-    top: 15px;
-    font-size: 40px;
-    width: 80px;
-    color: red;
-    border-radius: px;
-    z-index: 999;
-    /* transition: all 0.5s ease; */
-  }
-  .bar-holder {
-    width: 26px;
-    height: 22px;
-    /* background-color: blue; */
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .bar-holder > div {
+    justify-content: center;
+    /* height: 10vw; */
+    padding: 20px 0px;
     width: 100%;
-    height: 3px;
-    border-radius: 2px;
-    background-color: black;
-  }
-  .bar-holder > div:nth-child(2) {
-    width: 80%;
-  }
-  label #cancel {
-    z-index: 1111;
-    left: -150px;
-    top: 15px;
-    /* font-weight: lighter; */
-    transition: all 0.8s ease;
-    position: fixed;
-  }
-
-  #check:checked ~ .sidebar {
-    left: 0;
-  }
-  #check:checked ~ label #btn {
-    left: 170px;
-    display: none;
-    pointer-events: none;
-  }
-  #check:checked ~ label #cancel {
-    left: 140px;
+    /* border-bottom: 1px solid rgb(243, 243, 243); */
   }
 }
-@media (max-width: 450px) {
-  .logo__container {
-    align-self: center;
-    width: 90%;
-    object-fit: contain;
-  }
-  img {
-    width: 100%;
-  }
-  ul {
-    padding:  0;
-  }
-  .link {
-    padding: 20px 0;
-  }
+.mobile-menu {
+  position: absolute;
+  display: block;
+  right: 20px;
 }

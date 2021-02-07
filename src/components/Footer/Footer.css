@@ -1,6 +1,6 @@
 .footer {
   height: 80px;
-  background-color: rgb(22, 22, 22);
+  background-color:rgb(113,216,254);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -23,7 +23,7 @@
   /* background-color: yellow; */
 }
 .footer_one > p {
-  color: #59d2fe;
+  color: black;
   /* width: 100%; */
 }
 .footer_two > p {

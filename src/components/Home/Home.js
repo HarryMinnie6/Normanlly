@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import logo from "../../images/Normanlly_Logo.jpg"
+import logo from "../../images/Normanlly_Logo.jpg";
+import name from "../../images/Normanlly_name.jpg";
 import "./Home.css";
 
 function Home() {
@@ -16,11 +16,14 @@ function Home() {
   return (
     <div className='home-page' id='/'>
       <div className={scrollUp ? "bottom-line2" : "bottom-line"}></div>
-
       <section className='landing-section' id='home'>
         <div className='logoHolder'>
-       <img src={logo}/>
+          <img src={logo} />
         </div>
+        <div className='nameHolder'>
+          <img src={name} />
+        </div>
+        <p className=' home-page_p'>Personalised Web Design and Development</p>
       </section>
     </div>
   );

@@ -1,101 +1,79 @@
-import React, { Fragment, useState, useEffect } from "react";
-
-import { Link } from "react-scroll";
+import React, { useState, useEffect } from "react";
+import { ReactComponent as CloseMenu } from "./assets/x.svg";
+import { ReactComponent as MenuIcon } from "./assets/menu.svg";
+import { ReactComponent as Logo } from "./assets/secondary-logo.svg";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
-function Navbar() {
-  // for navbar to change color on scroll
-  const [scroll, setScroll] = useState(false);
+const Header = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    // find current scroll position
+    const currentScrollPos = window.pageYOffset;
+
+    // set state based on location info (explained in more detail below)
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 0);
+
+    // set state to new scroll position
+    setPrevScrollPos(currentScrollPos);
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 100);
-    });
-  }, []);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <Fragment>
-      <input type="checkbox" id="check" />
-      <label htmlFor="check">
-        <div id="btn">
-          <div className="bar-holder">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </label>
-      <label htmlFor="check">
-        <div className="close-bar" id="cancel">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </label>
-      
-      <nav className={scroll ? "sidebar sidebar2" : "sidebar "}>
+    <div className={visible ? "header" : "header2"}>
+      <div className="logo-nav">
+       
+      </div>
+      <ul className={click ? "nav-options active" : "nav-options"}>
+        <li className="option" onClick={closeMobileMenu}>
+          <Link   className="link"
+          to="/"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="option" onClick={closeMobileMenu}>
+          <Link className="link" to="#about">
+            What We Do
+          </Link>
+        </li>
+        <li className="option" onClick={closeMobileMenu}>
+          <Link className="link" to="services">
+          Projects
+          </Link>
+        </li>
+        <li className="option" onClick={closeMobileMenu}>
+          <Link className="link" to="solutions">
+          Contact
+          </Link>
+        </li>
      
-        <ul>
-          <li className="active">
-            <Link
-              className="link"
-              to="/"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="link"
-              to="about"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              What I Do
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="link"
-              to="projects"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="link"
-              to="contact"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-       {/*  <div className="social-media__wrapper">
-        <i className="fab fa-instagram"></i>
-        <i className="fab fa-linkedin-in"></i>
-      </div> */}
-      </nav>
-    </Fragment>
-  );
-}
+      </ul>
 
-export default Navbar;
+      <div className="mobile-menu" onClick={handleClick}>
+        {click ? (
+          <CloseMenu className="menu-icon" />
+        ) : (
+          <MenuIcon className="menu-icon" />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Header;

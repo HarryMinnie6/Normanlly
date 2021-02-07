@@ -4,7 +4,7 @@ import "./styles.css";
 import {
   // browser router on index.js so that useLocation hook can work
   Route,
-  Switch
+  Switch,
 } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import Contact from "./components/Contact/Contact";
@@ -21,22 +21,22 @@ export default function App() {
       <Navbar />
       <AnimatePresence>
         <Switch>
-          <Route exact path="/contact">
+          <Route exact path='contact'>
             <Contact />
           </Route>
-          <Route exact path="/projects">
+          <Route exact path='projects'>
             <Projects />
           </Route>
-          <Route exact path="/about">
+          <Route exact path='about'>
             <About />
           </Route>
-          <Route exact path="/SinglePageOption">
+          <Route exact path='/SinglePageOption'>
             {/* <SinglePageOption /> */}
           </Route>
-          <Route exact path="/CustomPageOption">
+          <Route exact path='/CustomPageOption'>
             {/* <CustomPageOption /> */}
           </Route>
-          <Route path="/" exact component={Landing}></Route>
+          <Route path='/' exact component={Landing}></Route>
         </Switch>
       </AnimatePresence>
     </Fragment>

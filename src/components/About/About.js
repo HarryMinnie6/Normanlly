@@ -5,18 +5,20 @@ function About() {
   return (
     <Fragment>
       <section className='about-section' id='about'>
-        <h2 className='h2-about'>About Me</h2>
+        <h2 className='h2-about'>About Normanlly</h2>
 
         <div>
           <p className='p-about' data-aos='fade-down'>
-            I'm a self-taught web developer / designer based in Cape Town, South
-            Africa. I have a passion for web design and love to create for web
-            and mobile devices. I'm quietly confident, naturally curious, and
-            perpetually working on improving my knowledge one design problem at
-            a time.
+          Normanlly was initially born for the love of creating
+          for the web. We have always cared for great visual design and
+          amazing user experience. Whether you are simply looking for a
+          web presence or a comprehensive site, Normanlly helps
+          start-ups and established businesses to launch their new or
+          revamped websites. We are available anywhere, anytime at the
+          click of a button.
           </p>
         </div>
-        <hr />
+      
       </section>
     </Fragment>
   );

@@ -16,7 +16,7 @@
   position: absolute;
   bottom: 0;
   height: 5px;
-  background-color: rgb(89,210,254, 0.5);
+  background-color: rgb(89, 210, 254, 0.5);
   width: 100vw;
   transition: opacity 200ms linear;
 }
@@ -32,42 +32,68 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: rgb(252, 252, 252); */
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
+
 .logoHolder {
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
-  position: absolute;
-  top: 150px;
+
   height: 250px;
   width: 250px;
-  background-color: red;
 }
-@media (max-width: 1070px) {
-  .description-div {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    width: 30%;
-    align-items: center;
-    margin: 4px;
-  }}
+.nameHolder {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 350px;
+  
+}
+.home-page_p{
+  margin-top: 50px;
+  font-size: 17px;
+  text-align: center;
+}
 
-  @media (max-width: 768px){
-    .logoHolder {
-      display: flex;
-      flex-direction: column;
-      align-self: center;
-      align-items: center;
-      position: absolute;
-      top: 150px;
-      height: 200px;
-      width: 200px;
-      background-color: red;
-    }
+@media (max-width: 768px) {
+  .logoHolder {
+    height: 200px;
+    width: 200px;
   }
+  .nameHolder {
+    margin-top: 30px;
+
+    width: 350px;
+  }
+}
+
+@media (max-width: 560px) {
+  .logoHolder {
+    height: 180px;
+    width: 180px;
+  }
+  .nameHolder {
+    margin-top: 20px;
+
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logoHolder {
+    height: 120px;
+    width: 120px;
+  }
+  .nameHolder {
+    margin-top: 20px;
+
+    width: 200px;
+  }
+}
