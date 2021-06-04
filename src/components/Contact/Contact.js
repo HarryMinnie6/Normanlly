@@ -13,7 +13,7 @@ function Contact() {
           help with something or just fancy saying hi? Then get in touch.
         </p>
         <p>harryminnie6@gmail.com</p>
-        <p>+27 (0) 76 591 9127</p>
+        <p>+27 76 591 9127</p>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 .projects-page {
   height: 100%;
   background-color: rgb(11, 11, 11);
-  background-image: url("../../images/pexels-elina-krima-3377405-3.jpg");
+  /* background-image: url("../../images/pexels-elina-krima-3377405-3.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   /* background-color: #88700e; */
 }
 .project-page__wrapper > h2 {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
 }
 
@@ -43,7 +43,7 @@
 }
 .project {
   position: relative;
-  width: 350px;
+  width: 320px;
   margin: 10px;
   height: 300px;
   /* background-color: green; */
@@ -74,11 +74,32 @@
   transition: opacity 200ms ease-in-out;
 }
 .project-description > h3 {
-  margin-top: 50px;
+  padding: 0 16px;
+  margin-top: 30px;
+  text-align: center;
+}
+.special_header{
+  margin-top: 20px !important;
+}
+.p-special{
+  margin-top: 30px !important;
 }
 .project-description > p {
-  margin-top: 30px;
-  font-family: "Libre Franklin", sans-serif;
+  margin-top: 5px;
+  padding: 0 16px;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  /* font-family: "Libre Franklin", sans-serif; */
+  font-weight: normal;
+}
+.project-details {
+  margin-top: 10px;
+  padding: 0 15px;
+}
+.project-details li{
+  padding: 0 px;
+  list-style: none;
 }
 .site-link {
   text-decoration: none;
@@ -96,7 +117,7 @@
 }
 .project:hover .project-description {
   opacity: 1;
-  background-color: rgba(163, 231, 255, 0.4);
+  background-color: rgba(163, 231, 255, 0.85);
 }
 img {
   width: 100%;

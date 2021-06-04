@@ -71,6 +71,16 @@
 }
 @media (max-width: 768px) {
   /*Mobile View */
+  .header {
+   
+    background-color: rgb(0, 0, 0, 0.0);
+  
+  }
+  .header2 {
+  
+    background-color: rgb(0, 0, 0, 0.0);
+   
+  }
 
   .logo {
     width: 45px;
@@ -82,7 +92,7 @@
     height: fit-content;
     position: absolute;
     left: 00px;
-    top: 60px;
+    top: 00px;
     left: -500px;
     right: 0;
     opacity: 0;
@@ -124,4 +134,5 @@
   position: absolute;
   display: block;
   right: 20px;
+  z-index: 999;
 }

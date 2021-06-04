@@ -10,7 +10,7 @@ function About() {
         <div>
           <p className="p-about">
             Normanlly was initially born for the love of creating for the web.
-            We have always cared for great visual design and amazing user
+            I have always cared for great visual design and amazing user
             experience. Whether you are simply looking for a web presence or a
             comprehensive site, Normanlly helps start-ups and established
             businesses to launch their new or revamped websites. We are

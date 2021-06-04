@@ -7,7 +7,7 @@ function Services() {
     <Fragment>
       <div className="services-page" id="about">
         <div className="services-page__wrapper">
-          <h2> What We Offer</h2>
+          <h2> What I Offer</h2>
           <div className="services__wrapper">
             <div className="services__wrapper_left">
               <div className="service">
@@ -58,7 +58,7 @@ function Services() {
           </div>
         </div>
         <div className="designProcess">
-          <p>Our Design Process</p>
+          <p>The Design Process</p>
           <div className="designProcess_wrapper">
             <div className="designProcess_processHolder">
               <div className="process">

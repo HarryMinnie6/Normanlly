@@ -30,12 +30,7 @@ export default function App() {
           <Route exact path='about'>
             <About />
           </Route>
-          <Route exact path='/SinglePageOption'>
-            {/* <SinglePageOption /> */}
-          </Route>
-          <Route exact path='/CustomPageOption'>
-            {/* <CustomPageOption /> */}
-          </Route>
+        
           <Route path='/' exact >
             <Landing />
           </Route>

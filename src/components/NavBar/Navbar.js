@@ -44,7 +44,7 @@ const Header = () => {
             offset={-150}
             duration={100}
           >
-            What We Do
+            What I Do
           </Link>
         </li>
         <li className='option' onClick={closeMobileMenu}>
