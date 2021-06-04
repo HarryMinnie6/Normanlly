@@ -1,9 +1,7 @@
 .services-page {
   height: 100%;
   background-color: #f8f8f8;
-  /* overflow-x: hidden; */
   position: relative;
-  /* background-image: url("../../images/pexels-elina-krima-3377405-3.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,28 +10,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px 0;
+  font-family: "Oxanium", "Bellota Text", cursive, sans-serif, Arial;
 }
 
 .services-page__wrapper {
   position: relative;
-  padding: 20px 0 20px 0;
-  /* width: 80%; */
-
-  /* height: 100vh;  */
+  padding: 40px 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #f8f8f8; */
-  /* background-image: url("../../images/imac-1999636_1920.png"); */
-  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
 }
 
 .services-page__wrapper > h2 {
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .services__wrapper {
   margin-top: 20px;
@@ -41,44 +34,85 @@
   width: 65%;
   /* height: 300px; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  /* justify-content: space-between; */
 }
-.services__wrapper2 {
-  margin-top: 0;
+.services__wrapper_left {
+  padding: 50px 20px;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 .service {
-  padding-top: 15px;
-  min-width: 220px;
-  max-width: 350px;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.service_header {
+  margin: 10px 0;
+  font-size: 24px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.service_paragraph {
+  font-size: 16px;
+  line-height: 25px;
+}
+.services__wrapper_right {
+  width: 50%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  background: url("https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+.designProcess {
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px 15px 10px;
-  /* background-color: gray; */
-  border: 1px solid rgb(228, 228, 228);
-  backdrop-filter: blur(5px);
 }
-.service-line {
-  height: 3px;
-  background-color:  rgb(89,210,254, 0.5);
-  width: 80px;
+.designProcess > p {
+  text-decoration: underline;
+}
+.designProcess_wrapper {
+  margin-top: 20px;
+  width: 900px;
+}
+.designProcess_processHolder {
+  display: flex;
+  flex-direction: column;
+}
+.process {
+  width: 55%;
+  margin: 10px 0;
 }
 
-.service > h2 {
-  font-size: 22px;
-  margin: 15px 0;
-  text-align: center;
+.process2 {
+  align-self: flex-end;
+  width: 55%;
 }
-.service > p, .service > i {
-  padding: 10px;
-  text-align: center;
-  line-height: 28px;
-  /* text-shadow: 1px 1px 6px rgb(163, 163, 163); */
-  font-family: "Libre Franklin", sans-serif;
+.process_header {
+  margin: 5px 0;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 @media (max-width: 1024px) {
   .services__wrapper {
     width: 90%;
+  }
+  .designProcess_wrapper {
+    width: 800px;
+  }
+}
+
+@media (max-width: 920px) {
+  .designProcess_wrapper {
+    width: 700px;
   }
 }
 @media (max-width: 850px) {
@@ -92,13 +126,54 @@
     flex-direction: column;
     align-items: center;
   }
-  .service {
-    max-width: 100%;
+
+  .services-page__wrapper > h2 {
+    margin-bottom: 0px;
+  }
+
+  .services__wrapper_left {
+    width: 100%;
+    padding: 0px 20px 50px 0;
+  }
+  .services__wrapper_right {
+    width: 100%;
+  }
+  .designProcess {
+    margin: 0px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .designProcess_wrapper {
+    width: 90%;
+  }
+  .process {
+    width: 55%;
+    margin: 15px 0;
   }
 }
-
+@media (max-width: 650px) {
+  .designProcess_processHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .process {
+    width: 90%;
+  }
+  .process2 {
+    align-self: center;
+    width: 90%;
+  }
+}
 @media (max-width: 375px) {
   .services-page__wrapper > h2 {
     font-size: 22px;
+  }
+  .process {
+    width: 100%;
+  }
+  .process2 {
+    width: 100%;
   }
 }
