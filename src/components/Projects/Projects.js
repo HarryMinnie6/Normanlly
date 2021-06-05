@@ -3,6 +3,7 @@ import "./Projects.css";
 import flex_digital from "./project-images/flex.png";
 import merge from "./project-images/merge.png";
 import struisbaai_accommodation from "./project-images/struisbaai_accommodation.png";
+import paving from "./project-images/paving.png";
 function Projects() {
   return (
     <div className='projects-page' id='projects'>
@@ -80,6 +81,28 @@ function Projects() {
             </div>
           </div>
         
+          <div className='project'>
+            <div className='project-image'>
+              <img
+                src={paving}
+                alt=''
+              />
+            </div>
+
+            <div className='project-description'>
+              <h3>Value Pave</h3>
+              <p className="p-special">
+              Value Pave is a paving company from Port Elizabeth.
+              Currently Designing UI/UX for Value Pave. Provided continuous consultation on UI/UX
+              and content of the website. Assisting with domain purchase,
+              registration and web hosting. Frequent deployment to testing
+              domain for client updates and approvals.
+              </p>
+                {/* <a href='' className='site-link'>
+                View site
+              </a>*/}
+            </div>
+          </div>
           <div className='project'>
             <div className='project-image'>
               <img
