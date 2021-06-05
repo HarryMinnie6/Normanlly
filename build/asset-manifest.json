@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Normanlly/static/css/main.97f40b9e.chunk.css",
+    "main.js": "/Normanlly/static/js/main.8f51867e.chunk.js",
+    "main.js.map": "/Normanlly/static/js/main.8f51867e.chunk.js.map",
+    "runtime-main.js": "/Normanlly/static/js/runtime-main.e73fe333.js",
+    "runtime-main.js.map": "/Normanlly/static/js/runtime-main.e73fe333.js.map",
+    "static/js/2.60127309.chunk.js": "/Normanlly/static/js/2.60127309.chunk.js",
+    "static/js/2.60127309.chunk.js.map": "/Normanlly/static/js/2.60127309.chunk.js.map",
+    "index.html": "/Normanlly/index.html",
+    "precache-manifest.5447d0a52c41e8648400d8241f226053.js": "/Normanlly/precache-manifest.5447d0a52c41e8648400d8241f226053.js",
+    "service-worker.js": "/Normanlly/service-worker.js",
+    "static/css/main.97f40b9e.chunk.css.map": "/Normanlly/static/css/main.97f40b9e.chunk.css.map",
+    "static/js/2.60127309.chunk.js.LICENSE.txt": "/Normanlly/static/js/2.60127309.chunk.js.LICENSE.txt",
+    "static/media/Normanlly_Logo.jpg": "/Normanlly/static/media/Normanlly_Logo.f95cb806.jpg",
+    "static/media/Normanlly_name.JPG": "/Normanlly/static/media/Normanlly_name.1ea9beb7.JPG",
+    "static/media/flex.png": "/Normanlly/static/media/flex.92622165.png",
+    "static/media/menu.272f75e0.svg": "/Normanlly/static/media/menu.272f75e0.svg",
+    "static/media/merge.png": "/Normanlly/static/media/merge.afc068be.png",
+    "static/media/paving.png": "/Normanlly/static/media/paving.c74bce3c.png",
+    "static/media/Services.css": "/Normanlly/static/media/pexels-notebook.585302c9.jpg",
+    "static/media/secondary-logo.e7506581.svg": "/Normanlly/static/media/secondary-logo.e7506581.svg",
+    "static/media/struisbaai_accommodation.png": "/Normanlly/static/media/struisbaai_accommodation.3434ac7f.png",
+    "static/media/x.61e1229d.svg": "/Normanlly/static/media/x.61e1229d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e73fe333.js",
+    "static/js/2.60127309.chunk.js",
+    "static/css/main.97f40b9e.chunk.css",
+    "static/js/main.8f51867e.chunk.js"
+  ]
+}
