@@ -4,18 +4,39 @@ import flex_digital from "./project-images/flex.png";
 import merge from "./project-images/merge.png";
 import struisbaai_accommodation from "./project-images/struisbaai_accommodation.png";
 import paving from "./project-images/paving.png";
+import unrealNFTs from "./project-images/unrealNFTS.png";
 function Projects() {
   return (
     <div className='projects-page' id='projects'>
       <div className='project-page__wrapper'>
-        <h2 data-aos='zoom-in'>What I'm currently working on</h2>
+        <h2 data-aos='zoom-in'>What I've worked on</h2>
+        {/* <h2 data-aos='zoom-in'>What I've currently working on</h2> */}
         <div className='project-holder'>
+          {/**---------------------------------------------------------------------------------------------------------------- */}
           <div className='project'>
             <div className='project-image'>
-              <img
-                src={flex_digital}
-                alt=''
-              />
+              <img src={unrealNFTs} alt='project' />
+            </div>
+
+            <div className='project-description'>
+              <h3 className='special_header'>Unreal NFTS</h3>
+              <p>
+                A website for a start-up company in South Africa specializing in
+                listing Non-fungible tokens (NFTs). My client wanted a website
+                focusing on visual design, striking colors and an easy to use
+                layout. Their main requirement was displaying their expertise in
+                assisting potential clients in listing NFTS in the crypto
+                currency space.
+              </p>
+              <a href='https://www.unreal-nfts.com/' className='site-link'>
+                View site
+              </a>
+            </div>
+          </div>
+          {/**---------------------------------------------------------------------------------------------------------------- */}
+          <div className='project'>
+            <div className='project-image'>
+              <img src={flex_digital} alt='project' />
             </div>
 
             <div className='project-description'>
@@ -35,6 +56,7 @@ function Projects() {
               </a>*/}
             </div>
           </div>
+          {/**---------------------------------------------------------------------------------------------------------------- */}
           <div className='project'>
             <div className='project-image'>
               <img src={flex_digital} alt='flex_digital logo' />
@@ -57,72 +79,68 @@ function Projects() {
               </a>*/}
             </div>
           </div>
+          {/**---------------------------------------------------------------------------------------------------------------- */}
           <div className='project'>
             <div className='project-image'>
-              <img
-                src={merge}
-                alt=''
-              />
+              <img src={merge} alt='' />
             </div>
 
             <div className='project-description'>
               <h3>Merge-IoT</h3>
               <p>
-                Merge-Iot is a start up company from the Netherlands
-                specializing in the Internet of things. Currently Designing
-                UI/UX for Merge-IoT. Provided continuous consultation on UI/UX
-                and content of the website. Assisting with domain purchase,
-                registration and web hosting. Frequent deployment to testing
-                domain for client updates and approvals.
+                A website for a start-up company in the Netherlands specializing
+                in the Internet of Things (IoT). My client wanted an easy to
+                use, clean and modern design showcasing there services and
+                leading industry expertise.
               </p>
-              {/* <a href='' className='site-link'>
-                View site
-              </a>*/}
-            </div>
-          </div>
-        
-          <div className='project'>
-            <div className='project-image'>
-              <img
-                src={paving}
-                alt=''
-              />
-            </div>
-
-            <div className='project-description'>
-              <h3>Value Pave</h3>
-              <p className="p-special">
-              Value Pave is a paving company from Port Elizabeth.
-              Currently Designing UI/UX for Value Pave. Provided continuous consultation on UI/UX
-              and content of the website. Assisting with domain purchase,
-              registration and web hosting. Frequent deployment to testing
-              domain for client updates and approvals.
-              </p>
-                {/* <a href='' className='site-link'>
-                View site
-              </a>*/}
-            </div>
-          </div>
-          <div className='project'>
-            <div className='project-image'>
-              <img
-                src={struisbaai_accommodation}
-                alt=''
-              />
-            </div>
-
-            <div className='project-description'>
-              <h3>Struisbaai Accommodation</h3>
-              <p className="p-special">
-                A site for a holiday home in Struisbaai, visitors can view
-                images of the house, view the rates of the house and find out
-                about acitivites in/around the town.
-              </p>
-              <a href='https://accommodation-struisbaai.co.za/' className='site-link'>
+              <a href='https://merge-iot.com/' className='site-link'>
                 View site
               </a>
             </div>
           </div>
+          {/**---------------------------------------------------------------------------------------------------------------- */}
+
+          <div className='project'>
+            <div className='project-image'>
+              <img src={struisbaai_accommodation} alt='' />
+            </div>
+
+            <div className='project-description'>
+              <h3>Struisbaai Accommodation</h3>
+              <p className='p-special'>
+                A site for a holiday home in Struisbaai, visitors can view
+                images of the house, view the rates of the house and find out
+                about acitivites in/around the town.
+              </p>
+              <a
+                href='https://accommodation-struisbaai.co.za/'
+                className='site-link'
+              >
+                View site
+              </a>
+            </div>
+          </div>
+          {/**---------------------------------------------------------------------------------------------------------------- */}
+          <div className='project'>
+            <div className='project-image'>
+              <img src={paving} alt='' />
+            </div>
+
+            <div className='project-description'>
+              <h3>Value Pave</h3>
+              <p className='p-special'>
+                Value Pave is a paving company from Port Elizabeth. Currently
+                Designing UI/UX for Value Pave. Provided continuous consultation
+                on UI/UX and content of the website. Assisting with domain
+                purchase, registration and web hosting. Frequent deployment to
+                testing domain for client updates and approvals.
+              </p>
+              {/* <a href='' className='site-link'>
+              View site
+            </a>*/}
+            </div>
+          </div>
+          {/**---------------------------------------------------------------------------------------------------------------- */}
         </div>
       </div>
     </div>
